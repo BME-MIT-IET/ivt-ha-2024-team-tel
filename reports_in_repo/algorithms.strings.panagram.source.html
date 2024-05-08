@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>algorithms/strings/panagram.py - flake8 annotated source</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <div id="masthead" class="sev-2"></div>
+      <div id="page">
+         <h1>
+            <a href="algorithms.strings.panagram.report.html">
+               <img src="back.svg" alt="&#x2B05;">
+               algorithms/strings/panagram.py source
+            </a>
+         </h1>
+
+         <div id="doc">
+            <div id="l1"
+               class="code sev- "><tt><i>1</i> <span class="sd">&quot;&quot;&quot;</span></tt>
+            </div>
+            <div id="l2"
+               class="code sev- "><tt><i>2</i> <span class="sd">Given a string, check whether it is a panagram or not.</span></tt>
+            </div>
+            <div id="l3"
+               class="code sev- "><tt><i>3</i> &nbsp;</tt>
+            </div>
+            <div id="l4"
+               class="code sev- "><tt><i>4</i> <span class="sd">A panagram is a sentence that uses every letter at least once.</span></tt>
+            </div>
+            <div id="l5"
+               class="code sev- "><tt><i>5</i> &nbsp;</tt>
+            </div>
+            <div id="l6"
+               class="code sev- "><tt><i>6</i> <span class="sd">The most famous example is: &quot;he quick brown fox jumps over the lazy dog.</span></tt>
+            </div>
+            <div id="l7"
+               class="code sev- "><tt><i>7</i> &nbsp;</tt>
+            </div>
+            <div id="l8"
+               class="code sev- "><tt><i>8</i> <span class="sd">Note:</span></tt>
+            </div>
+            <div id="l9"
+               class="code sev- "><tt><i>9</i> <span class="sd">A panagram in one language isn&#39;t necessarily a panagram in another. This</span></tt>
+            </div>
+            <div id="l10"
+               class="code sev- "><tt><i>10</i> <span class="sd">module assumes the english language. Hence, the Finnish panagram</span></tt>
+            </div>
+            <div id="l11"
+               class="code sev- "><tt><i>11</i> <span class="sd">&#39;Törkylempijävongahdus&#39; won&#39;t pass for a panagram despite being considered</span></tt>
+            </div>
+            <div id="l12"
+               class="code sev- "><tt><i>12</i> <span class="sd">a perfect panagram in its language. However, the Swedish panagram</span></tt>
+            </div>
+            <div id="l13"
+               class="code sev- "><tt><i>13</i> <span class="sd">&#39;Yxmördaren Julia Blomqvist på fäktning i Schweiz&#39; will pass despite</span></tt>
+            </div>
+            <div id="l14"
+               class="code sev- "><tt><i>14</i> <span class="sd">including letters not used in the english alphabet. This is because the</span></tt>
+            </div>
+            <div id="l15"
+               class="code sev- "><tt><i>15</i> <span class="sd">Swedish alphabet only extends the Latin one.</span></tt>
+            </div>
+            <div id="l16"
+               class="code sev- "><tt><i>16</i> <span class="sd">&quot;&quot;&quot;</span></tt>
+            </div>
+            <div id="l17"
+               class="code sev- "><tt><i>17</i> &nbsp;</tt>
+            </div>
+            <div id="l18"
+               class="code sev- "><tt><i>18</i> <span class="kn">from</span> <span class="nn">string</span> <span class="kn">import</span> <span class="n">ascii_lowercase</span></tt>
+            </div>
+            <div id="l19"
+               class="code sev- "><tt><i>19</i> &nbsp;</tt>
+            </div>
+            <div id="l20"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E302
+                     </span>
+                     Expected 2 blank lines, found 1</li>
+               
+               </ul><tt><i>20</i> <span class="k">def</span> <span class="nf">panagram</span><span class="p">(</span><span class="n">string</span><span class="p">):</span></tt>
+            </div>
+            <div id="l21"
+               class="code sev- "><tt><i>21</i> <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span></tt>
+            </div>
+            <div id="l22"
+               class="code sev- "><tt><i>22</i> <span class="sd">    Returns whether the input string is an English panagram or not.</span></tt>
+            </div>
+            <div id="l23"
+               class="code sev- "><tt><i>23</i> &nbsp;</tt>
+            </div>
+            <div id="l24"
+               class="code sev- "><tt><i>24</i> <span class="sd">        Parameters:</span></tt>
+            </div>
+            <div id="l25"
+               class="code sev- "><tt><i>25</i> <span class="sd">            string (str): A sentence in the form of a string.</span></tt>
+            </div>
+            <div id="l26"
+               class="code sev- "><tt><i>26</i> &nbsp;</tt>
+            </div>
+            <div id="l27"
+               class="code sev- "><tt><i>27</i> <span class="sd">        Returns:</span></tt>
+            </div>
+            <div id="l28"
+               class="code sev- "><tt><i>28</i> <span class="sd">            A boolean with the result.</span></tt>
+            </div>
+            <div id="l29"
+               class="code sev- "><tt><i>29</i> <span class="sd">    &quot;&quot;&quot;</span></tt>
+            </div>
+            <div id="l30"
+               class="code sev- "><tt><i>30</i>     <span class="n">letters</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">ascii_lowercase</span><span class="p">)</span></tt>
+            </div>
+            <div id="l31"
+               class="code sev- "><tt><i>31</i>     <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">string</span><span class="p">:</span></tt>
+            </div>
+            <div id="l32"
+               class="code sev- "><tt><i>32</i>         <span class="k">try</span><span class="p">:</span></tt>
+            </div>
+            <div id="l33"
+               class="code sev- "><tt><i>33</i>             <span class="n">letters</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span></tt>
+            </div>
+            <div id="l34"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E722
+                     </span>
+                     Do not use bare 'except'</li>
+               
+               </ul><tt><i>34</i>         <span class="k">except</span><span class="p">:</span></tt>
+            </div>
+            <div id="l35"
+               class="code sev- "><tt><i>35</i>             <span class="k">pass</span></tt>
+            </div>
+            <div id="l36"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W292
+                     </span>
+                     No newline at end of file</li>
+               
+               </ul><tt><i>36</i>     <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">letters</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span></tt>
+            </div>
+            
+         </div>
+      </div>
+   </body>
+</html>
