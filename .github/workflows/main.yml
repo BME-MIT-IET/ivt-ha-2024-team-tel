@@ -27,18 +27,18 @@ jobs:
         mkdir -p reports
         flake8 . --format=html --htmldir=reports/flake8_report || echo "Flake8 failed"
 
-    - name: Create Reports Folder
-      run: mkdir -p reports_in_repo
+    - name: Create Static Analysis Reports Folder
+      run: mkdir -p static_analysis_reports
 
     - name: Copy Flake8 report to repository
       run: |
-        cp -r reports/flake8_report/* reports_in_repo/
-        echo "Flake8 report copied to reports_in_repo folder"
+        cp -r reports/flake8_report/* static_analysis_reports/
+        echo "Flake8 report copied to static_analysis_reports folder"
 
     - name: Commit Reports to Repository
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@users.noreply.github.com"
-        git add reports_in_repo
+        git add static_analysis_reports
         git commit -m "Add Flake8 report"
         git push
