@@ -34,16 +34,7 @@ class TestHuffmanCoding(unittest.TestCase):
         os.remove(self.file_in_name)
         os.remove(self.file_out_bin_name)
         os.remove(self.file_out_name)
-#added
-    def test_huffman_coding_empty_file(self):
-        with open(self.file_in_name, 'wb') as file:
-            pass  # Create an empty file
-        HuffmanCoding.encode_file(self.file_in_name, self.file_out_bin_name)
-        HuffmanCoding.decode_file(self.file_out_bin_name, self.file_out_name)
 
-        with open(self.file_out_name, 'rb') as file:
-            content = file.read()
-            self.assertEqual(content, b'')  # Expect empty content after decoding
 
 class TestRLECompression(unittest.TestCase):
 

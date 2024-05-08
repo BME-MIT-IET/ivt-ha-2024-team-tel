@@ -13,8 +13,8 @@ from algorithms.dp import (
     longest_increasing_subsequence,
     longest_increasing_subsequence_optimized,
     longest_increasing_subsequence_optimized2,
-    int_divide,find_k_factor,
-    planting_trees, regex_matching
+    int_divide,find_k_factor,elias_gamma_encode,elias_gamma_decode,elias_delta_encode,elias_delta_decode,
+    planting_trees, regex_matching,HuffmanCoding,encode_rle,decode_rle
 )
 
 

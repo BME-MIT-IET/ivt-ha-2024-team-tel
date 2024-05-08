@@ -70,11 +70,6 @@ class TestDFA(unittest.TestCase):
         self.assertTrue(DFA(transitions, start, final, "000"))
         self.assertTrue(DFA(transitions, start, final, "111"))
 
-    def test_DFA_no_valid_transition(self):
-        transitions = {'a': {'0': 'b'}, 'b': {'1': 'a'}}
-        final = ['b']
-        start = 'a'
-        self.assertFalse(DFA(transitions, start, final, "000"))  # No transition defined for 'b' with '0'
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,4 +1,3 @@
-import collections
 
 """
 do BFS from each building, and decrement all empty place for every building visit

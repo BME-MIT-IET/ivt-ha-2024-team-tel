@@ -268,7 +268,8 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(0, binary_gap(8))
         # 145 = 10010001
         self.assertEqual(4, binary_gap(145))
-    class EnhancedBitTests(unittest.TestCase):
+        
+class EnhancedBitTests(unittest.TestCase):
     
     def test_count_ones_large_number(self):
         # Testing with a large number for count_ones_iter and count_ones_recur

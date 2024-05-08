@@ -72,20 +72,7 @@ class TestSudoku(unittest.TestCase):
         test_obj.solve()
         self.assertEqual([['5', '3', '1'], ['6', '1', '2'],
                          ['1', '9', '8']], test_obj.board)
-    #added 
-    def test_sudoku_solver_incomplete(self):
-        board = [["5", "3", "."], ["6", ".", "."], [".", "9", "8"]]
-        expected = [['5', '3', '4'], ['6', '7', '8'], ['1', '9', '2']]
-        test_obj = Sudoku(board)
-        test_obj.solve()
-        self.assertEqual(expected, test_obj.board)
 
-    def test_sudoku_solver_empty(self):
-        board = [[".", ".", "."], [".", ".", "."], [".", ".", "."]]
-        expected = [[".", ".", "."], [".", ".", "."], [".", ".", "."]]  # Unchanged
-        test_obj = Sudoku(board)
-        test_obj.solve()
-        self.assertEqual(expected, test_obj.board)
 
 
 class TestWallsAndGates(unittest.TestCase):

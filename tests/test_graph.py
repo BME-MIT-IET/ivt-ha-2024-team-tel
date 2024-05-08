@@ -15,6 +15,10 @@ from algorithms.graph import cycle_detection
 from algorithms.graph import find_path
 from algorithms.graph import path_between_two_vertices_in_digraph
 from algorithms.graph import strongly_connected_components_kosaraju
+from algorithms.graph import Node
+from algorithms.graph import clone_graph
+from algorithms.graph import count_connected_components
+from algorithms.graph import find_all_cliques
 
 import unittest
 #added 

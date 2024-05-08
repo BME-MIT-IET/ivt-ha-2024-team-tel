@@ -1,11 +1,10 @@
+import unittest
 from algorithms.bfs import (
     count_islands,
     maze_search,
-    ladder_length,
-    shortest_distance_from_all_buildings
+    shortest_distance_from_all_buildings,
+    ladder_length
 )
-
-import unittest
 
 
 class TestCountIslands(unittest.TestCase):
@@ -62,15 +61,15 @@ class TestShortestDistance(unittest.TestCase):
 
     def test_no_buildings(self):
         grid = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
-        self.assertEqual(shortest_distance(grid), -1, "Should return -1 if no buildings are present")
+        self.assertEqual(shortest_distance_from_all_buildings.shortest_distance(grid), -1, "Should return -1 if no buildings are present")
 
     def test_no_empty_space(self):
         grid = [[1, 1, 1], [1, 1, 1], [1, 1, 1]]
-        self.assertEqual(shortest_distance(grid), -1, "Should return -1 if there is no empty space")
+        self.assertEqual(shortest_distance_from_all_buildings.shortest_distance(grid), -1, "Should return -1 if there is no empty space")
 
     def test_single_building(self):
         grid = [[0, 0, 0], [0, 1, 0], [0, 0, 0]]
-        self.assertEqual(shortest_distance(grid), 4, "Should return total distance to all reachable plots")
+        self.assertEqual(shortest_distance_from_all_buildings.shortest_distance(grid), 4, "Should return total distance to all reachable plots")
 
     def test_multiple_buildings(self):
         grid = [
@@ -78,7 +77,7 @@ class TestShortestDistance(unittest.TestCase):
             [0, 0, 0, 0, 1],
             [0, 1, 0, 0, 0]
         ]
-        self.assertEqual(shortest_distance(grid), 7, "Should return minimum distance sum to all buildings")
+        self.assertEqual(shortest_distance_from_all_buildings.shortest_distance(grid), 7, "Should return minimum distance sum to all buildings")
 
     def test_unreachable_space(self):
         grid = [
@@ -86,7 +85,7 @@ class TestShortestDistance(unittest.TestCase):
             [0, 1, 0],
             [1, 0, 1]
         ]
-        self.assertEqual(shortest_distance(grid), -1, "Should return -1 if a cell is unreachable")
+        self.assertEqual(shortest_distance_from_all_buildings.shortest_distance(grid), -1, "Should return -1 if a cell is unreachable")
 
     def test_large_grid(self):
         grid = [
@@ -96,13 +95,13 @@ class TestShortestDistance(unittest.TestCase):
             [0, 0, 0, 0, 0],
             [1, 0, 0, 0, 1]
         ]
-        self.assertEqual(shortest_distance(grid), 18, "Should handle larger grids correctly")
+        self.assertEqual(shortest_distance_from_all_buildings.shortest_distance(grid), 18, "Should handle larger grids correctly")
 
     def test_edge_cases(self):
         grid = [[1]]
-        self.assertEqual(shortest_distance(grid), -1, "Single building should result in -1")
+        self.assertEqual(shortest_distance_from_all_buildings.shortest_distance(grid), -1, "Single building should result in -1")
         grid = [[0]]
-        self.assertEqual(shortest_distance(grid), -1, "Single empty space should result in -1")
+        self.assertEqual(shortest_distance_from_all_buildings.shortest_distance(grid), -1, "Single empty space should result in -1")
         
 if __name__ == "__main__":
     unittest.main()
