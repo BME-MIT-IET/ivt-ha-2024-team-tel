@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>flake8 violations: algorithms/sort/stooge_sort.py</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+<script>
+function bindHandler(link) {
+   var code = link.getAttribute('data-code');
+   var key = location.pathname + '#' + code;
+
+   var ul = link.parentNode.querySelector('.details');
+   if (sessionStorage[key] != 'open') {
+      ul.style.display = 'none';
+   }
+   link.addEventListener('click', function (event) {
+      if (!ul.style.display || ul.style.display == 'none') {
+         ul.style.display = 'block';
+         sessionStorage[key] = 'open';
+      } else {
+         ul.style.display = 'none';
+         sessionStorage[key] = 'closed';
+      }
+   });
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+   var links = document.querySelectorAll('#index > li > a');
+   for (var i = 0; i < links.length; i++) {
+      bindHandler(links[i]);
+   }
+});
+</script>
+   </head>
+   <body>
+      <div id="masthead" class="sev-2"></div>
+      <div id="page">
+         <p id="srclink">
+            <a title="View full annotated source"
+               href="algorithms.sort.stooge_sort.source.html">
+               <img src="file.svg" alt="&#x2261;">
+            </a></p>
+         <h1>
+            <a href="index.html">
+               <img src="back.svg" alt="&#x2B05;">
+               algorithms/sort/stooge_sort.py
+            </a>
+         </h1>
+
+         <ul id="index">
+         
+         <li>
+            <a data-code="W291">
+               <span class="count sev-2">
+                  23
+               </span>
+               <strong>W291:</strong> trailing whitespace
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l11">
+                  <tt><i>11</i> <span class="k">def</span> <span class="nf">stoogesort</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">h</span><span class="p">):</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l12">
+                  <tt><i>12</i>     <span class="k">if</span> <span class="n">l</span> <span class="o">&gt;=</span> <span class="n">h</span><span class="p">:</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l15">
+                  <tt><i>15</i>     <span class="c1"># If first element is smaller </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l16">
+                  <tt><i>16</i>     <span class="c1"># than last, swap them </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l17">
+                  <tt><i>17</i>     <span class="k">if</span> <span class="n">arr</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="o">&gt;</span><span class="n">arr</span><span class="p">[</span><span class="n">h</span><span class="p">]:</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l18">
+                  <tt><i>18</i>         <span class="n">t</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">l</span><span class="p">]</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l19">
+                  <tt><i>19</i>         <span class="n">arr</span><span class="p">[</span><span class="n">l</span><span class="p">]</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">h</span><span class="p">]</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l20">
+                  <tt><i>20</i>         <span class="n">arr</span><span class="p">[</span><span class="n">h</span><span class="p">]</span> <span class="o">=</span> <span class="n">t</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l22">
+                  <tt><i>22</i>     <span class="c1"># If there are more than 2 elements in </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l23">
+                  <tt><i>23</i>     <span class="c1"># the array </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l24">
+                  <tt><i>24</i>     <span class="k">if</span> <span class="n">h</span><span class="o">-</span><span class="n">l</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l25">
+                  <tt><i>25</i>         <span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="nb">int</span><span class="p">)((</span><span class="n">h</span><span class="o">-</span><span class="n">l</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l27">
+                  <tt><i>27</i>         <span class="c1"># Recursively sort first 2 / 3 elements </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l28">
+                  <tt><i>28</i>         <span class="n">stoogesort</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="p">(</span><span class="n">h</span><span class="o">-</span><span class="n">t</span><span class="p">))</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l30">
+                  <tt><i>30</i>         <span class="c1"># Recursively sort last 2 / 3 elements </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l31">
+                  <tt><i>31</i>         <span class="n">stoogesort</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">l</span> <span class="o">+</span> <span class="n">t</span><span class="p">,</span> <span class="p">(</span><span class="n">h</span><span class="p">))</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l33">
+                  <tt><i>33</i>         <span class="c1"># Recursively sort first 2 / 3 elements </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l34">
+                  <tt><i>34</i>         <span class="c1"># again to confirm </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l35">
+                  <tt><i>35</i>         <span class="n">stoogesort</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="p">(</span><span class="n">h</span><span class="o">-</span><span class="n">t</span><span class="p">))</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l40">
+                  <tt><i>40</i>     <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">)</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l41">
+                  <tt><i>41</i>     <span class="n">stoogesort</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l42">
+                  <tt><i>42</i>     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l43">
+                  <tt><i>43</i>         <span class="nb">print</span><span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">)</span> </tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="W293">
+               <span class="count sev-2">
+                  6
+               </span>
+               <strong>W293:</strong> blank line contains whitespace
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l14">
+                  <tt><i>14</i>    </tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l21">
+                  <tt><i>21</i>    </tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l26">
+                  <tt><i>26</i>    </tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l29">
+                  <tt><i>29</i>    </tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l32">
+                  <tt><i>32</i>    </tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l36">
+                  <tt><i>36</i>         </tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E231">
+               <span class="count sev-2">
+                  5
+               </span>
+               <strong>E231:</strong> missing whitespace after ','
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Missing whitespace after ',' (in 5 places):</p>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l39">
+                  <tt><i>39</i>     <span class="n">array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">64</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">]</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E251">
+               <span class="count sev-2">
+                  2
+               </span>
+               <strong>E251:</strong> unexpected spaces around keyword / parameter equals
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Unexpected spaces around keyword / parameter equals (in 2 places):</p>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l43">
+                  <tt><i>43</i>         <span class="nb">print</span><span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">)</span> </tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E225">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E225:</strong> missing whitespace around operator
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l17">
+                  <tt><i>17</i>     <span class="k">if</span> <span class="n">arr</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="o">&gt;</span><span class="n">arr</span><span class="p">[</span><span class="n">h</span><span class="p">]:</span> </tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E303">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E303:</strong> too many blank lines (3)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l11">
+                  <tt><i>11</i> <span class="k">def</span> <span class="nf">stoogesort</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">h</span><span class="p">):</span> </tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E741">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E741:</strong> ambiguous variable name 'l'
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="algorithms.sort.stooge_sort.source.html#l11">
+                  <tt><i>11</i> <span class="k">def</span> <span class="nf">stoogesort</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">h</span><span class="p">):</span> </tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         </ul>
+      </div>
+   </body>
+</html>
