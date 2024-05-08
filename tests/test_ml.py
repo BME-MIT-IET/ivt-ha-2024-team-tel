@@ -34,7 +34,13 @@ class TestML(unittest.TestCase):
 
     def test_distance(self):
         self.assertAlmostEqual(distance((1, 2, 3), (1, 0, -1)), 4.47, 2)
-
+#added
+    def test_invalid_input(self):
+        with self.assertRaises(AssertionError):
+            distance((1, 2), (1, 2, 3))
+        
+        with self.assertRaises(AssertionError):
+            nearest_neighbor((1, 2), [(1, 2)])
 
 if __name__ == "__main__":
     unittest.main()
