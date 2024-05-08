@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>algorithms/maths/recursive_binomial_coefficient.py - flake8 annotated source</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <div id="masthead" class="sev-2"></div>
+      <div id="page">
+         <h1>
+            <a href="algorithms.maths.recursive_binomial_coefficient.report.html">
+               <img src="back.svg" alt="&#x2B05;">
+               algorithms/maths/recursive_binomial_coefficient.py source
+            </a>
+         </h1>
+
+         <div id="doc">
+            <div id="l1"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E231
+                     </span>
+                     Missing whitespace after ','</li>
+               
+               </ul><tt><i>1</i> <span class="k">def</span> <span class="nf">recursive_binomial_coefficient</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">k</span><span class="p">):</span></tt>
+            </div>
+            <div id="l2"
+               class="code sev- "><tt><i>2</i> <span class="w">    </span><span class="sd">&quot;&quot;&quot;Calculates the binomial coefficient, C(n,k), with n&gt;=k using recursion</span></tt>
+            </div>
+            <div id="l3"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (83 > 79 characters)</li>
+               
+               </ul><tt><i>3</i> <span class="sd">    Time complexity is O(k), so can calculate fairly quickly for large values of k.</span></tt>
+            </div>
+            <div id="l4"
+               class="code sev- "><tt><i>4</i> &nbsp;</tt>
+            </div>
+            <div id="l5"
+               class="code sev- "><tt><i>5</i> <span class="sd">    &gt;&gt;&gt; recursive_binomial_coefficient(5,0)</span></tt>
+            </div>
+            <div id="l6"
+               class="code sev- "><tt><i>6</i> <span class="sd">    1</span></tt>
+            </div>
+            <div id="l7"
+               class="code sev- "><tt><i>7</i> &nbsp;</tt>
+            </div>
+            <div id="l8"
+               class="code sev- "><tt><i>8</i> <span class="sd">    &gt;&gt;&gt; recursive_binomial_coefficient(8,2)</span></tt>
+            </div>
+            <div id="l9"
+               class="code sev- "><tt><i>9</i> <span class="sd">    28</span></tt>
+            </div>
+            <div id="l10"
+               class="code sev- "><tt><i>10</i> &nbsp;</tt>
+            </div>
+            <div id="l11"
+               class="code sev- "><tt><i>11</i> <span class="sd">    &gt;&gt;&gt; recursive_binomial_coefficient(500,300)</span></tt>
+            </div>
+            <div id="l12"
+               class="code sev- "><tt><i>12</i> <span class="sd">    5054949849935535817667719165973249533761635252733275327088189563256013971725761702359997954491403585396607971745777019273390505201262259748208640</span></tt>
+            </div>
+            <div id="l13"
+               class="code sev- "><tt><i>13</i> &nbsp;</tt>
+            </div>
+            <div id="l14"
+               class="code sev- "><tt><i>14</i> <span class="sd">    &quot;&quot;&quot;</span></tt>
+            </div>
+            <div id="l15"
+               class="code sev- "><tt><i>15</i> &nbsp;</tt>
+            </div>
+            <div id="l16"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E225
+                     </span>
+                     Missing whitespace around operator</li>
+               
+               </ul><tt><i>16</i>     <span class="k">if</span> <span class="n">k</span><span class="o">&gt;</span><span class="n">n</span><span class="p">:</span></tt>
+            </div>
+            <div id="l17"
+               class="code sev- "><tt><i>17</i>         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Invalid Inputs, ensure that n &gt;= k&#39;</span><span class="p">)</span></tt>
+            </div>
+            <div id="l18"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E265
+                     </span>
+                     Block comment should start with '# '</li>
+               
+               </ul><tt><i>18</i>         <span class="c1">#function is only defined for n&gt;=k</span></tt>
+            </div>
+            <div id="l19"
+               class="code sev- "><tt><i>19</i>     <span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">n</span> <span class="o">==</span> <span class="n">k</span><span class="p">:</span></tt>
+            </div>
+            <div id="l20"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E265
+                     </span>
+                     Block comment should start with '# '</li>
+               
+               </ul><tt><i>20</i>         <span class="c1">#C(n,0) = C(n,n) = 1, so this is our base case.</span></tt>
+            </div>
+            <div id="l21"
+               class="code sev- "><tt><i>21</i>         <span class="k">return</span> <span class="mi">1</span></tt>
+            </div>
+            <div id="l22"
+               class="code sev- "><tt><i>22</i>     <span class="k">if</span> <span class="n">k</span> <span class="o">&gt;</span> <span class="n">n</span><span class="o">/</span><span class="mi">2</span><span class="p">:</span></tt>
+            </div>
+            <div id="l23"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E265
+                     </span>
+                     Block comment should start with '# '</li>
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (92 > 79 characters)</li>
+               
+               </ul><tt><i>23</i>         <span class="c1">#C(n,k) = C(n,n-k), so if n/2 is sufficiently small, we can reduce the problem size.</span></tt>
+            </div>
+            <div id="l24"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E231
+                     </span>
+                     Missing whitespace after ','</li>
+               
+               </ul><tt><i>24</i>         <span class="k">return</span> <span class="n">recursive_binomial_coefficient</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">n</span><span class="o">-</span><span class="n">k</span><span class="p">)</span></tt>
+            </div>
+            <div id="l25"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E265
+                     </span>
+                     Block comment should start with '# '</li>
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (91 > 79 characters)</li>
+               
+               </ul><tt><i>25</i>     <span class="c1">#else, we know C(n,k) = (n/k)C(n-1,k-1), so we can use this to reduce our problem size.</span></tt>
+            </div>
+            <div id="l26"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E231
+                     </span>
+                     Missing whitespace after ','</li>
+               
+               </ul><tt><i>26</i>     <span class="k">return</span> <span class="nb">int</span><span class="p">((</span><span class="n">n</span><span class="o">/</span><span class="n">k</span><span class="p">)</span><span class="o">*</span><span class="n">recursive_binomial_coefficient</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span></tt>
+            </div>
+            
+         </div>
+      </div>
+   </body>
+</html>

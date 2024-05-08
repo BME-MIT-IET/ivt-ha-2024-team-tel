@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>flake8 violations: tests/test_linkedlist.py</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+<script>
+function bindHandler(link) {
+   var code = link.getAttribute('data-code');
+   var key = location.pathname + '#' + code;
+
+   var ul = link.parentNode.querySelector('.details');
+   if (sessionStorage[key] != 'open') {
+      ul.style.display = 'none';
+   }
+   link.addEventListener('click', function (event) {
+      if (!ul.style.display || ul.style.display == 'none') {
+         ul.style.display = 'block';
+         sessionStorage[key] = 'open';
+      } else {
+         ul.style.display = 'none';
+         sessionStorage[key] = 'closed';
+      }
+   });
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+   var links = document.querySelectorAll('#index > li > a');
+   for (var i = 0; i < links.length; i++) {
+      bindHandler(links[i]);
+   }
+});
+</script>
+   </head>
+   <body>
+      <div id="masthead" class="sev-1"></div>
+      <div id="page">
+         <p id="srclink">
+            <a title="View full annotated source"
+               href="tests.test_linkedlist.source.html">
+               <img src="file.svg" alt="&#x2261;">
+            </a></p>
+         <h1>
+            <a href="index.html">
+               <img src="back.svg" alt="&#x2B05;">
+               tests/test_linkedlist.py
+            </a>
+         </h1>
+
+         <ul id="index">
+         
+         <li>
+            <a data-code="F821">
+               <span class="count sev-1">
+                  1
+               </span>
+               <strong>F821:</strong> undefined name 'add_two_numbers'
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="tests.test_linkedlist.source.html#l75">
+                  <tt><i>75</i>         <span class="n">result</span> <span class="o">=</span> <span class="n">add_two_numbers</span><span class="p">(</span><span class="n">l1</span><span class="p">,</span> <span class="n">l2</span><span class="p">)</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E302">
+               <span class="count sev-2">
+                  5
+               </span>
+               <strong>E302:</strong> expected 2 blank lines, found 1
+               
+                  (and 1 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Expected 2 blank lines, found 1:</p>
+               
+               <a href="tests.test_linkedlist.source.html#l20">
+                  <tt><i>20</i> <span class="k">class</span> <span class="nc">TestCopyRandomPointer</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Expected 2 blank lines, found 1:</p>
+               
+               <a href="tests.test_linkedlist.source.html#l43">
+                  <tt><i>43</i> <span class="k">class</span> <span class="nc">TestDeleteNode</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Expected 2 blank lines, found 0:</p>
+               
+               <a href="tests.test_linkedlist.source.html#l54">
+                  <tt><i>54</i> <span class="k">class</span> <span class="nc">TestFirstCyclicNode</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Expected 2 blank lines, found 0:</p>
+               
+               <a href="tests.test_linkedlist.source.html#l65">
+                  <tt><i>65</i> <span class="k">class</span> <span class="nc">TestAddTwoNumbers</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Expected 2 blank lines, found 0:</p>
+               
+               <a href="tests.test_linkedlist.source.html#l79">
+                  <tt><i>79</i> <span class="k">class</span> <span class="nc">TestIntersection</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E122">
+               <span class="count sev-2">
+                  4
+               </span>
+               <strong>E122:</strong> continuation line missing indentation or outdented
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="tests.test_linkedlist.source.html#l13">
+                  <tt><i>13</i> <span class="n">ListNode</span><span class="p">,</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="tests.test_linkedlist.source.html#l14">
+                  <tt><i>14</i> <span class="n">delete_node</span><span class="p">,</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="tests.test_linkedlist.source.html#l15">
+                  <tt><i>15</i> <span class="n">first_cyclic_node</span><span class="p">,</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="tests.test_linkedlist.source.html#l16">
+                  <tt><i>16</i> <span class="n">intersection</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E265">
+               <span class="count sev-2">
+                  4
+               </span>
+               <strong>E265:</strong> block comment should start with '# '
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="tests.test_linkedlist.source.html#l19">
+                  <tt><i>19</i> <span class="c1">#added </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="tests.test_linkedlist.source.html#l41">
+                  <tt><i>41</i> <span class="c1">#added </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="tests.test_linkedlist.source.html#l53">
+                  <tt><i>53</i> <span class="c1">#added </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="tests.test_linkedlist.source.html#l64">
+                  <tt><i>64</i> <span class="c1">#added</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E501">
+               <span class="count sev-2">
+                  3
+               </span>
+               <strong>E501:</strong> line too long (105 > 79 characters)
+               
+                  (and 1 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Line too long (105 > 79 characters):</p>
+               
+               <a href="tests.test_linkedlist.source.html#l295">
+                  <tt><i>295</i>         <span class="bp">self</span><span class="o">.</span><span class="n">random_list_node1</span><span class="o">.</span><span class="n">next</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">random_list_node1</span><span class="o">.</span><span class="n">random</span> <span class="o">=</span> <span class="n">random_list_node2</span><span class="p">,</span> <span class="n">random_list_node4</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (95 > 79 characters):</p>
+               
+               <a href="tests.test_linkedlist.source.html#l296">
+                  <tt><i>296</i>         <span class="n">random_list_node2</span><span class="o">.</span><span class="n">next</span><span class="p">,</span> <span class="n">random_list_node2</span><span class="o">.</span><span class="n">random</span> <span class="o">=</span> <span class="n">random_list_node3</span><span class="p">,</span> <span class="n">random_list_node5</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (95 > 79 characters):</p>
+               
+               <a href="tests.test_linkedlist.source.html#l297">
+                  <tt><i>297</i>         <span class="n">random_list_node3</span><span class="o">.</span><span class="n">next</span><span class="p">,</span> <span class="n">random_list_node3</span><span class="o">.</span><span class="n">random</span> <span class="o">=</span> <span class="n">random_list_node4</span><span class="p">,</span> <span class="n">random_list_node2</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="W291">
+               <span class="count sev-2">
+                  3
+               </span>
+               <strong>W291:</strong> trailing whitespace
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="tests.test_linkedlist.source.html#l19">
+                  <tt><i>19</i> <span class="c1">#added </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="tests.test_linkedlist.source.html#l41">
+                  <tt><i>41</i> <span class="c1">#added </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="tests.test_linkedlist.source.html#l53">
+                  <tt><i>53</i> <span class="c1">#added </span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E303">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E303:</strong> too many blank lines (4)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="tests.test_linkedlist.source.html#l104">
+                  <tt><i>104</i> <span class="k">class</span> <span class="nc">Node</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E741">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E741:</strong> ambiguous variable name 'l'
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="tests.test_linkedlist.source.html#l124">
+                  <tt><i>124</i>         <span class="bp">self</span><span class="o">.</span><span class="n">l</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         </ul>
+      </div>
+   </body>
+</html>

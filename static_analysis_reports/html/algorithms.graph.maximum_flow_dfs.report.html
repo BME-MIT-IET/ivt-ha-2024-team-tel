@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>flake8 violations: algorithms/graph/maximum_flow_dfs.py</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+<script>
+function bindHandler(link) {
+   var code = link.getAttribute('data-code');
+   var key = location.pathname + '#' + code;
+
+   var ul = link.parentNode.querySelector('.details');
+   if (sessionStorage[key] != 'open') {
+      ul.style.display = 'none';
+   }
+   link.addEventListener('click', function (event) {
+      if (!ul.style.display || ul.style.display == 'none') {
+         ul.style.display = 'block';
+         sessionStorage[key] = 'open';
+      } else {
+         ul.style.display = 'none';
+         sessionStorage[key] = 'closed';
+      }
+   });
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+   var links = document.querySelectorAll('#index > li > a');
+   for (var i = 0; i < links.length; i++) {
+      bindHandler(links[i]);
+   }
+});
+</script>
+   </head>
+   <body>
+      <div id="masthead" class="sev-2"></div>
+      <div id="page">
+         <p id="srclink">
+            <a title="View full annotated source"
+               href="algorithms.graph.maximum_flow_dfs.source.html">
+               <img src="file.svg" alt="&#x2261;">
+            </a></p>
+         <h1>
+            <a href="index.html">
+               <img src="back.svg" alt="&#x2B05;">
+               algorithms/graph/maximum_flow_dfs.py
+            </a>
+         </h1>
+
+         <ul id="index">
+         
+         <li>
+            <a data-code="E265">
+               <span class="count sev-2">
+                  16
+               </span>
+               <strong>E265:</strong> block comment should start with '# '
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="algorithms.graph.maximum_flow_dfs.source.html#l32">
+                  <tt><i>32</i>     <span class="c1">#initial setting</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.graph.maximum_flow_dfs.source.html#l37">
+                  <tt><i>37</i>         <span class="c1">#setting min to max_value</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.graph.maximum_flow_dfs.source.html#l39">
+                  <tt><i>39</i>         <span class="c1">#save visited nodes</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.graph.maximum_flow_dfs.source.html#l41">
+                  <tt><i>41</i>         <span class="c1">#save parent nodes</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.graph.maximum_flow_dfs.source.html#l44">
+                  <tt><i>44</i>         <span class="c1">#initialize stack for DFS</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.graph.maximum_flow_dfs.source.html#l47">
+                  <tt><i>47</i>         <span class="c1">#initial setting</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.graph.maximum_flow_dfs.source.html#l51">
+                  <tt><i>51</i>         <span class="c1">#DFS to find path</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.graph.maximum_flow_dfs.source.html#l53">
+                  <tt><i>53</i>             <span class="c1">#pop from queue</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.graph.maximum_flow_dfs.source.html#l56">
+                  <tt><i>56</i>                 <span class="c1">#checking capacity and visit</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.graph.maximum_flow_dfs.source.html#l58">
+                  <tt><i>58</i>                     <span class="c1">#if not, put into queue and chage to visit and save path</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.graph.maximum_flow_dfs.source.html#l63">
+                  <tt><i>63</i>         <span class="c1">#if there is no path from src to sink</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.graph.maximum_flow_dfs.source.html#l67">
+                  <tt><i>67</i>         <span class="c1">#initial setting</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.graph.maximum_flow_dfs.source.html#l70">
+                  <tt><i>70</i>         <span class="c1">#Get minimum flow</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.graph.maximum_flow_dfs.source.html#l72">
+                  <tt><i>72</i>             <span class="c1">#find minimum flow</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.graph.maximum_flow_dfs.source.html#l77">
+                  <tt><i>77</i>         <span class="c1">#initial setting</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="algorithms.graph.maximum_flow_dfs.source.html#l80">
+                  <tt><i>80</i>         <span class="c1">#reduce capacity</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E302">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E302:</strong> expected 2 blank lines, found 1
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="algorithms.graph.maximum_flow_dfs.source.html#l27">
+                  <tt><i>27</i> <span class="k">def</span> <span class="nf">maximum_flow_dfs</span><span class="p">(</span><span class="n">adjacency_matrix</span><span class="p">):</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="W391">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>W391:</strong> blank line at end of file
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="algorithms.graph.maximum_flow_dfs.source.html#l88">
+                  <tt><i>88</i> &nbsp;</tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         </ul>
+      </div>
+   </body>
+</html>

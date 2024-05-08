@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>algorithms/bit/swap_pair.py - flake8 annotated source</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <div id="masthead" class="sev-2"></div>
+      <div id="page">
+         <h1>
+            <a href="algorithms.bit.swap_pair.report.html">
+               <img src="back.svg" alt="&#x2B05;">
+               algorithms/bit/swap_pair.py source
+            </a>
+         </h1>
+
+         <div id="doc">
+            <div id="l1"
+               class="code sev- "><tt><i>1</i> <span class="sd">&quot;&quot;&quot;</span></tt>
+            </div>
+            <div id="l2"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (83 > 79 characters)</li>
+               
+               </ul><tt><i>2</i> <span class="sd">Swap_pair: A function swap odd and even bits in an integer with as few instructions</span></tt>
+            </div>
+            <div id="l3"
+               class="code sev- "><tt><i>3</i> <span class="sd">as possible (Ex bit and bit 1 are swapped, bit 2 and bit 3 are swapped)</span></tt>
+            </div>
+            <div id="l4"
+               class="code sev- "><tt><i>4</i> &nbsp;</tt>
+            </div>
+            <div id="l5"
+               class="code sev- "><tt><i>5</i> <span class="sd">For example:</span></tt>
+            </div>
+            <div id="l6"
+               class="code sev- "><tt><i>6</i> <span class="sd">22: 010110  --&gt; 41: 101001</span></tt>
+            </div>
+            <div id="l7"
+               class="code sev- "><tt><i>7</i> <span class="sd">10: 1010    --&gt; 5 : 0101</span></tt>
+            </div>
+            <div id="l8"
+               class="code sev- "><tt><i>8</i> <span class="sd">&quot;&quot;&quot;</span></tt>
+            </div>
+            <div id="l9"
+               class="code sev- "><tt><i>9</i> &nbsp;</tt>
+            </div>
+            <div id="l10"
+               class="code sev- "><tt><i>10</i> <span class="sd">&quot;&quot;&quot;</span></tt>
+            </div>
+            <div id="l11"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (80 > 79 characters)</li>
+               
+               </ul><tt><i>11</i> <span class="sd">We can approach this as operating on the odds bit first, and then the even bits.</span></tt>
+            </div>
+            <div id="l12"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (82 > 79 characters)</li>
+               
+               </ul><tt><i>12</i> <span class="sd">We can mask all odd bits with 10101010 in binary (&#39;AA&#39;) then shift them right by 1</span></tt>
+            </div>
+            <div id="l13"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (83 > 79 characters)</li>
+               
+               </ul><tt><i>13</i> <span class="sd">Similarly, we mask all even bit with 01010101 in binary (&#39;55&#39;) then shift them left</span></tt>
+            </div>
+            <div id="l14"
+               class="code sev- "><tt><i>14</i> <span class="sd">by 1. Finally, we merge these two values by OR operation.</span></tt>
+            </div>
+            <div id="l15"
+               class="code sev- "><tt><i>15</i> <span class="sd">&quot;&quot;&quot;</span></tt>
+            </div>
+            <div id="l16"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E302
+                     </span>
+                     Expected 2 blank lines, found 0</li>
+               
+               </ul><tt><i>16</i> <span class="k">def</span> <span class="nf">swap_pair</span><span class="p">(</span><span class="n">num</span><span class="p">):</span></tt>
+            </div>
+            <div id="l17"
+               class="code sev- "><tt><i>17</i>     <span class="c1"># odd bit arithmetic right shift 1 bit</span></tt>
+            </div>
+            <div id="l18"
+               class="code sev- "><tt><i>18</i>     <span class="n">odd</span> <span class="o">=</span> <span class="p">(</span><span class="n">num</span> <span class="o">&amp;</span> <span class="nb">int</span><span class="p">(</span><span class="s1">&#39;AAAAAAAA&#39;</span><span class="p">,</span> <span class="mi">16</span><span class="p">))</span> <span class="o">&gt;&gt;</span> <span class="mi">1</span></tt>
+            </div>
+            <div id="l19"
+               class="code sev- "><tt><i>19</i>     <span class="c1"># even bit left shift 1 bit</span></tt>
+            </div>
+            <div id="l20"
+               class="code sev- "><tt><i>20</i>     <span class="n">even</span> <span class="o">=</span> <span class="p">(</span><span class="n">num</span> <span class="o">&amp;</span> <span class="nb">int</span><span class="p">(</span><span class="s1">&#39;55555555&#39;</span><span class="p">,</span> <span class="mi">16</span><span class="p">))</span> <span class="o">&lt;&lt;</span> <span class="mi">1</span></tt>
+            </div>
+            <div id="l21"
+               class="code sev- "><tt><i>21</i>     <span class="k">return</span> <span class="n">odd</span> <span class="o">|</span> <span class="n">even</span></tt>
+            </div>
+            
+         </div>
+      </div>
+   </body>
+</html>
