@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>flake8 violations: algorithms/graph/__init__.py</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+<script>
+function bindHandler(link) {
+   var code = link.getAttribute('data-code');
+   var key = location.pathname + '#' + code;
+
+   var ul = link.parentNode.querySelector('.details');
+   if (sessionStorage[key] != 'open') {
+      ul.style.display = 'none';
+   }
+   link.addEventListener('click', function (event) {
+      if (!ul.style.display || ul.style.display == 'none') {
+         ul.style.display = 'block';
+         sessionStorage[key] = 'open';
+      } else {
+         ul.style.display = 'none';
+         sessionStorage[key] = 'closed';
+      }
+   });
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+   var links = document.querySelectorAll('#index > li > a');
+   for (var i = 0; i < links.length; i++) {
+      bindHandler(links[i]);
+   }
+});
+</script>
+   </head>
+   <body>
+      <div id="masthead" class="sev-1"></div>
+      <div id="page">
+         <p id="srclink">
+            <a title="View full annotated source"
+               href="algorithms.graph.__init__.source.html">
+               <img src="file.svg" alt="&#x2261;">
+            </a></p>
+         <h1>
+            <a href="index.html">
+               <img src="back.svg" alt="&#x2B05;">
+               algorithms/graph/__init__.py
+            </a>
+         </h1>
+
+         <ul id="index">
+         
+         <li>
+            <a data-code="F401">
+               <span class="count sev-1">
+                  8
+               </span>
+               <strong>F401:</strong> '.tarjan.*' imported but unused
+               
+                  (and 7 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>'.tarjan.*' imported but unused:</p>
+               
+               <a href="algorithms.graph.__init__.source.html#l5">
+                  <tt><i>5</i> <span class="kn">from</span> <span class="nn">.tarjan</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.check_bipartite.*' imported but unused:</p>
+               
+               <a href="algorithms.graph.__init__.source.html#l6">
+                  <tt><i>6</i> <span class="kn">from</span> <span class="nn">.check_bipartite</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.maximum_flow.*' imported but unused:</p>
+               
+               <a href="algorithms.graph.__init__.source.html#l7">
+                  <tt><i>7</i> <span class="kn">from</span> <span class="nn">.maximum_flow</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.maximum_flow_bfs.*' imported but unused:</p>
+               
+               <a href="algorithms.graph.__init__.source.html#l8">
+                  <tt><i>8</i> <span class="kn">from</span> <span class="nn">.maximum_flow_bfs</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.maximum_flow_dfs.*' imported but unused:</p>
+               
+               <a href="algorithms.graph.__init__.source.html#l9">
+                  <tt><i>9</i> <span class="kn">from</span> <span class="nn">.maximum_flow_dfs</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.all_pairs_shortest_path.*' imported but unused:</p>
+               
+               <a href="algorithms.graph.__init__.source.html#l10">
+                  <tt><i>10</i> <span class="kn">from</span> <span class="nn">.all_pairs_shortest_path</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.bellman_ford.*' imported but unused:</p>
+               
+               <a href="algorithms.graph.__init__.source.html#l11">
+                  <tt><i>11</i> <span class="kn">from</span> <span class="nn">.bellman_ford</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.prims_minimum_spanning.*' imported but unused:</p>
+               
+               <a href="algorithms.graph.__init__.source.html#l12">
+                  <tt><i>12</i> <span class="kn">from</span> <span class="nn">.prims_minimum_spanning</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="F403">
+               <span class="count sev-1">
+                  8
+               </span>
+               <strong>F403:</strong> 'from .tarjan import *' used; unable to detect undefined names
+               
+                  (and 7 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>'from .tarjan import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.graph.__init__.source.html#l5">
+                  <tt><i>5</i> <span class="kn">from</span> <span class="nn">.tarjan</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .check_bipartite import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.graph.__init__.source.html#l6">
+                  <tt><i>6</i> <span class="kn">from</span> <span class="nn">.check_bipartite</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .maximum_flow import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.graph.__init__.source.html#l7">
+                  <tt><i>7</i> <span class="kn">from</span> <span class="nn">.maximum_flow</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .maximum_flow_bfs import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.graph.__init__.source.html#l8">
+                  <tt><i>8</i> <span class="kn">from</span> <span class="nn">.maximum_flow_bfs</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .maximum_flow_dfs import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.graph.__init__.source.html#l9">
+                  <tt><i>9</i> <span class="kn">from</span> <span class="nn">.maximum_flow_dfs</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .all_pairs_shortest_path import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.graph.__init__.source.html#l10">
+                  <tt><i>10</i> <span class="kn">from</span> <span class="nn">.all_pairs_shortest_path</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .bellman_ford import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.graph.__init__.source.html#l11">
+                  <tt><i>11</i> <span class="kn">from</span> <span class="nn">.bellman_ford</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .prims_minimum_spanning import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.graph.__init__.source.html#l12">
+                  <tt><i>12</i> <span class="kn">from</span> <span class="nn">.prims_minimum_spanning</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         </ul>
+      </div>
+   </body>
+</html>
