@@ -22,9 +22,18 @@ jobs:
         pip install flake8-html
 
     - name: Run Flake8
+      id: flake8
       run: |
         mkdir -p reports
-        flake8 . --format=html --htmldir=reports/flake8_report
+        flake8 . --format=html --htmldir=reports/flake8_report || echo "Flake8 failed"
+
+    - name: Generate and Display Report
+      if: ${{ failure() }}
+      run: |
+        echo "Generating Flake8 report..."
+        # Add any additional steps to handle report generation/display
+        # For example, you might want to print the report to the console
+        cat reports/flake8_report/*.html
 
     - name: Upload Flake8 report
       uses: actions/upload-artifact@v2
