@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>flake8 violations: algorithms/heap/skyline.py</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+<script>
+function bindHandler(link) {
+   var code = link.getAttribute('data-code');
+   var key = location.pathname + '#' + code;
+
+   var ul = link.parentNode.querySelector('.details');
+   if (sessionStorage[key] != 'open') {
+      ul.style.display = 'none';
+   }
+   link.addEventListener('click', function (event) {
+      if (!ul.style.display || ul.style.display == 'none') {
+         ul.style.display = 'block';
+         sessionStorage[key] = 'open';
+      } else {
+         ul.style.display = 'none';
+         sessionStorage[key] = 'closed';
+      }
+   });
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+   var links = document.querySelectorAll('#index > li > a');
+   for (var i = 0; i < links.length; i++) {
+      bindHandler(links[i]);
+   }
+});
+</script>
+   </head>
+   <body>
+      <div id="masthead" class="sev-2"></div>
+      <div id="page">
+         <p id="srclink">
+            <a title="View full annotated source"
+               href="algorithms.heap.skyline.source.html">
+               <img src="file.svg" alt="&#x2261;">
+            </a></p>
+         <h1>
+            <a href="index.html">
+               <img src="back.svg" alt="&#x2B05;">
+               algorithms/heap/skyline.py
+            </a>
+         </h1>
+
+         <ul id="index">
+         
+         <li>
+            <a data-code="E501">
+               <span class="count sev-2">
+                  13
+               </span>
+               <strong>E501:</strong> line too long (83 > 79 characters)
+               
+                  (and 12 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Line too long (83 > 79 characters):</p>
+               
+               <a href="algorithms.heap.skyline.source.html#l3">
+                  <tt><i>3</i> <span class="sd">A city&#39;s skyline is the outer contour of the silhouette formed by all the buildings</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (88 > 79 characters):</p>
+               
+               <a href="algorithms.heap.skyline.source.html#l7">
+                  <tt><i>7</i> <span class="sd">write a program to output the skyline formed by these buildings collectively (Figure B).</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (96 > 79 characters):</p>
+               
+               <a href="algorithms.heap.skyline.source.html#l9">
+                  <tt><i>9</i> <span class="sd">The geometric information of each building is represented by a triplet of integers [Li, Ri, Hi],</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (99 > 79 characters):</p>
+               
+               <a href="algorithms.heap.skyline.source.html#l10">
+                  <tt><i>10</i> <span class="sd">where Li and Ri are the x coordinates of the left and right edge of the ith building, respectively,</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (100 > 79 characters):</p>
+               
+               <a href="algorithms.heap.skyline.source.html#l11">
+                  <tt><i>11</i> <span class="sd">and Hi is its height. It is guaranteed that 0 ≤ Li, Ri ≤ INT_MAX, 0 &lt; Hi ≤ INT_MAX, and Ri - Li &gt; 0.</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (103 > 79 characters):</p>
+               
+               <a href="algorithms.heap.skyline.source.html#l12">
+                  <tt><i>12</i> <span class="sd">You may assume all buildings are perfect rectangles grounded on an absolutely flat surface at height 0.</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (92 > 79 characters):</p>
+               
+               <a href="algorithms.heap.skyline.source.html#l20">
+                  <tt><i>20</i> <span class="sd">A key point is the left endpoint of a horizontal line segment. Note that the last key point,</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (82 > 79 characters):</p>
+               
+               <a href="algorithms.heap.skyline.source.html#l22">
+                  <tt><i>22</i> <span class="sd">is merely used to mark the termination of the skyline, and always has zero height.</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (104 > 79 characters):</p>
+               
+               <a href="algorithms.heap.skyline.source.html#l23">
+                  <tt><i>23</i> <span class="sd">Also, the ground in between any two adjacent buildings should be considered part of the skyline contour.</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (124 > 79 characters):</p>
+               
+               <a href="algorithms.heap.skyline.source.html#l25">
+                  <tt><i>25</i> <span class="sd">For instance, the skyline in Figure B should be represented as:[ [2 10], [3 15], [7 12], [12 0], [15 10], [20 8], [24, 0] ].</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (86 > 79 characters):</p>
+               
+               <a href="algorithms.heap.skyline.source.html#l29">
+                  <tt><i>29</i> <span class="sd">The number of buildings in any input list is guaranteed to be in the range [0, 10000].</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (98 > 79 characters):</p>
+               
+               <a href="algorithms.heap.skyline.source.html#l32">
+                  <tt><i>32</i> <span class="sd">There must be no consecutive horizontal lines of equal height in the output skyline. For instance,</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (107 > 79 characters):</p>
+               
+               <a href="algorithms.heap.skyline.source.html#l33">
+                  <tt><i>33</i> <span class="sd">[...[2 3], [4 5], [7 5], [11 5], [12 7]...] is not acceptable; the three lines of height 5 should be merged</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E302">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E302:</strong> expected 2 blank lines, found 1
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="algorithms.heap.skyline.source.html#l39">
+                  <tt><i>39</i> <span class="k">def</span> <span class="nf">get_skyline</span><span class="p">(</span><span class="n">lrh</span><span class="p">):</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         </ul>
+      </div>
+   </body>
+</html>

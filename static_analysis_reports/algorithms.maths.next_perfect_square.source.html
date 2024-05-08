@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>algorithms/maths/next_perfect_square.py - flake8 annotated source</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <div id="masthead" class="sev-2"></div>
+      <div id="page">
+         <h1>
+            <a href="algorithms.maths.next_perfect_square.report.html">
+               <img src="back.svg" alt="&#x2B05;">
+               algorithms/maths/next_perfect_square.py source
+            </a>
+         </h1>
+
+         <div id="doc">
+            <div id="l1"
+               class="code sev- "><tt><i>1</i> <span class="sd">&quot;&quot;&quot;</span></tt>
+            </div>
+            <div id="l2"
+               class="code sev- "><tt><i>2</i> <span class="sd">This program will look for the next perfect square.</span></tt>
+            </div>
+            <div id="l3"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (97 > 79 characters)</li>
+               
+               </ul><tt><i>3</i> <span class="sd">Check the argument to see if it is a perfect square itself, if it is not then return -1 otherwise</span></tt>
+            </div>
+            <div id="l4"
+               class="code sev- "><tt><i>4</i> <span class="sd">look for the next perfect square.</span></tt>
+            </div>
+            <div id="l5"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (96 > 79 characters)</li>
+               
+               </ul><tt><i>5</i> <span class="sd">for instance if you pass 121 then the script should return the next perfect square which is 144.</span></tt>
+            </div>
+            <div id="l6"
+               class="code sev- "><tt><i>6</i> <span class="sd">&quot;&quot;&quot;</span></tt>
+            </div>
+            <div id="l7"
+               class="code sev- "><tt><i>7</i> &nbsp;</tt>
+            </div>
+            <div id="l8"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E302
+                     </span>
+                     Expected 2 blank lines, found 1</li>
+               
+               </ul><tt><i>8</i> <span class="k">def</span> <span class="nf">find_next_square</span><span class="p">(</span><span class="n">sq</span><span class="p">):</span></tt>
+            </div>
+            <div id="l9"
+               class="code sev- "><tt><i>9</i>     <span class="n">root</span> <span class="o">=</span> <span class="n">sq</span> <span class="o">**</span> <span class="mf">0.5</span></tt>
+            </div>
+            <div id="l10"
+               class="code sev- "><tt><i>10</i>     <span class="k">if</span> <span class="n">root</span><span class="o">.</span><span class="n">is_integer</span><span class="p">():</span></tt>
+            </div>
+            <div id="l11"
+               class="code sev- "><tt><i>11</i>         <span class="k">return</span> <span class="p">(</span><span class="n">root</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span></tt>
+            </div>
+            <div id="l12"
+               class="code sev- "><tt><i>12</i>     <span class="k">return</span> <span class="o">-</span><span class="mi">1</span></tt>
+            </div>
+            <div id="l13"
+               class="code sev- "><tt><i>13</i> &nbsp;</tt>
+            </div>
+            <div id="l14"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E302
+                     </span>
+                     Expected 2 blank lines, found 1</li>
+               
+               </ul><tt><i>14</i> <span class="k">def</span> <span class="nf">find_next_square2</span><span class="p">(</span><span class="n">sq</span><span class="p">):</span></tt>
+            </div>
+            <div id="l15"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (97 > 79 characters)</li>
+               
+               </ul><tt><i>15</i> <span class="w">    </span><span class="sd">&quot;&quot;&quot; Alternative method, works by evaluating anything non-zero as True (0.000001 --&gt; True) &quot;&quot;&quot;</span></tt>
+            </div>
+            <div id="l16"
+               class="code sev- "><tt><i>16</i>     <span class="n">root</span> <span class="o">=</span> <span class="n">sq</span><span class="o">**</span><span class="mf">0.5</span></tt>
+            </div>
+            <div id="l17"
+               class="code sev- "><tt><i>17</i>     <span class="k">return</span> <span class="o">-</span><span class="mi">1</span> <span class="k">if</span> <span class="n">root</span> <span class="o">%</span> <span class="mi">1</span> <span class="k">else</span> <span class="p">(</span><span class="n">root</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span></tt>
+            </div>
+            
+         </div>
+      </div>
+   </body>
+</html>
