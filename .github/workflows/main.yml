@@ -31,12 +31,12 @@ jobs:
       if: ${{ failure() }}
       run: |
         apt-get update && apt-get install -y wkhtmltopdf
-        wkhtmltoimage --format png reports/flake8_report/index.html static_analysis_reports/image/flake8_report.png
+        wkhtmltoimage --format png reports/flake8_report/index.html static_analysis_reports/png/flake8_report.png
 
     - name: Create Static Analysis Reports Folder
       run: |
         mkdir -p static_analysis_reports/html
-        mkdir -p static_analysis_reports/image
+        mkdir -p static_analysis_reports/png
 
     - name: Copy Flake8 HTML reports to repository
       run: |
@@ -46,8 +46,8 @@ jobs:
     - name: Copy Flake8 PNG reports to repository
       if: ${{ failure() }}
       run: |
-        cp -r reports/flake8_report/* static_analysis_reports/image/
-        echo "Flake8 PNG reports copied to static_analysis_reports/image folder"
+        cp -r reports/flake8_report/* static_analysis_reports/png/
+        echo "Flake8 PNG reports copied to static_analysis_reports/png folder"
 
     - name: Commit Reports to Repository
       run: |
