@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>flake8 violations: algorithms/maths/num_perfect_squares.py</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+<script>
+function bindHandler(link) {
+   var code = link.getAttribute('data-code');
+   var key = location.pathname + '#' + code;
+
+   var ul = link.parentNode.querySelector('.details');
+   if (sessionStorage[key] != 'open') {
+      ul.style.display = 'none';
+   }
+   link.addEventListener('click', function (event) {
+      if (!ul.style.display || ul.style.display == 'none') {
+         ul.style.display = 'block';
+         sessionStorage[key] = 'open';
+      } else {
+         ul.style.display = 'none';
+         sessionStorage[key] = 'closed';
+      }
+   });
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+   var links = document.querySelectorAll('#index > li > a');
+   for (var i = 0; i < links.length; i++) {
+      bindHandler(links[i]);
+   }
+});
+</script>
+   </head>
+   <body>
+      <div id="masthead" class="sev-2"></div>
+      <div id="page">
+         <p id="srclink">
+            <a title="View full annotated source"
+               href="algorithms.maths.num_perfect_squares.source.html">
+               <img src="file.svg" alt="&#x2261;">
+            </a></p>
+         <h1>
+            <a href="index.html">
+               <img src="back.svg" alt="&#x2B05;">
+               algorithms/maths/num_perfect_squares.py
+            </a>
+         </h1>
+
+         <ul id="index">
+         
+         <li>
+            <a data-code="E501">
+               <span class="count sev-2">
+                  14
+               </span>
+               <strong>E501:</strong> line too long (99 > 79 characters)
+               
+                  (and 7 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Line too long (99 > 79 characters):</p>
+               
+               <a href="algorithms.maths.num_perfect_squares.source.html#l2">
+                  <tt><i>2</i> <span class="sd">Given an integer num_perfect_squares will return the minimum amount of perfect squares are required</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (99 > 79 characters):</p>
+               
+               <a href="algorithms.maths.num_perfect_squares.source.html#l3">
+                  <tt><i>3</i> <span class="sd">to sum to the specified number. Lagrange&#39;s four-square theorem gives us that the answer will always</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (84 > 79 characters):</p>
+               
+               <a href="algorithms.maths.num_perfect_squares.source.html#l4">
+                  <tt><i>4</i> <span class="sd">be between 1 and 4 (https://en.wikipedia.org/wiki/Lagrange%27s_four-square_theorem).</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (84 > 79 characters):</p>
+               
+               <a href="algorithms.maths.num_perfect_squares.source.html#l19">
+                  <tt><i>19</i> <span class="sd">    Returns the smallest number of perfect squares that sum to the specified number.</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (98 > 79 characters):</p>
+               
+               <a href="algorithms.maths.num_perfect_squares.source.html#l26">
+                  <tt><i>26</i>     <span class="c1"># We check if https://en.wikipedia.org/wiki/Legendre%27s_three-square_theorem holds and divide</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (95 > 79 characters):</p>
+               
+               <a href="algorithms.maths.num_perfect_squares.source.html#l27">
+                  <tt><i>27</i>     <span class="c1"># the number accordingly. Ie. if the number can be written as a sum of 3 squares (where the</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (95 > 79 characters):</p>
+               
+               <a href="algorithms.maths.num_perfect_squares.source.html#l28">
+                  <tt><i>28</i>     <span class="c1"># 0^2 is allowed), which is possible for all numbers except those of the form: 4^a(8b + 7).</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (96 > 79 characters):</p>
+               
+               <a href="algorithms.maths.num_perfect_squares.source.html#l32">
+                  <tt><i>32</i>     <span class="c1"># If the number is of the form: 4^a(8b + 7) it can&#39;t be expressed as a sum of three (or less</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (97 > 79 characters):</p>
+               
+               <a href="algorithms.maths.num_perfect_squares.source.html#l33">
+                  <tt><i>33</i>     <span class="c1"># excluding the 0^2) perfect squares. If the number was of that form, the previous while loop</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (99 > 79 characters):</p>
+               
+               <a href="algorithms.maths.num_perfect_squares.source.html#l34">
+                  <tt><i>34</i>     <span class="c1"># divided away the 4^a, so by now it would be of the form: 8b + 7. So check if this is the case</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (90 > 79 characters):</p>
+               
+               <a href="algorithms.maths.num_perfect_squares.source.html#l35">
+                  <tt><i>35</i>     <span class="c1"># and return 4 since it neccessarily must be a sum of 4 perfect squares, in accordance </span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (99 > 79 characters):</p>
+               
+               <a href="algorithms.maths.num_perfect_squares.source.html#l40">
+                  <tt><i>40</i>     <span class="c1"># By now we know that the number wasn&#39;t of the form 4^a(8b + 7) so it can be expressed as a sum</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (97 > 79 characters):</p>
+               
+               <a href="algorithms.maths.num_perfect_squares.source.html#l41">
+                  <tt><i>41</i>     <span class="c1"># of 3 or less perfect squares. Try first to express it as a sum of 2 perfect squares, and if</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (89 > 79 characters):</p>
+               
+               <a href="algorithms.maths.num_perfect_squares.source.html#l42">
+                  <tt><i>42</i>     <span class="c1"># that fails, we know finally that it can be expressed as a sum of 3 perfect squares.</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E302">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E302:</strong> expected 2 blank lines, found 1
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="algorithms.maths.num_perfect_squares.source.html#l17">
+                  <tt><i>17</i> <span class="k">def</span> <span class="nf">num_perfect_squares</span><span class="p">(</span><span class="n">number</span><span class="p">):</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="W291">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>W291:</strong> trailing whitespace
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="algorithms.maths.num_perfect_squares.source.html#l35">
+                  <tt><i>35</i>     <span class="c1"># and return 4 since it neccessarily must be a sum of 4 perfect squares, in accordance </span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         </ul>
+      </div>
+   </body>
+</html>

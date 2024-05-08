@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>algorithms/tree/fenwick_tree/fenwick_tree.py - flake8 annotated source</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <div id="masthead" class="sev-2"></div>
+      <div id="page">
+         <h1>
+            <a href="algorithms.tree.fenwick_tree.fenwick_tree.report.html">
+               <img src="back.svg" alt="&#x2B05;">
+               algorithms/tree/fenwick_tree/fenwick_tree.py source
+            </a>
+         </h1>
+
+         <div id="doc">
+            <div id="l1"
+               class="code sev- "><tt><i>1</i> <span class="sd">&quot;&quot;&quot;</span></tt>
+            </div>
+            <div id="l2"
+               class="code sev- "><tt><i>2</i> <span class="sd">Fenwick Tree / Binary Indexed Tree</span></tt>
+            </div>
+            <div id="l3"
+               class="code sev- "><tt><i>3</i> &nbsp;</tt>
+            </div>
+            <div id="l4"
+               class="code sev- "><tt><i>4</i> <span class="sd">Consider we have an array arr[0 . . . n-1]. We would like to</span></tt>
+            </div>
+            <div id="l5"
+               class="code sev- "><tt><i>5</i> <span class="sd">1. Compute the sum of the first i elements.</span></tt>
+            </div>
+            <div id="l6"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (87 > 79 characters)</li>
+               
+               </ul><tt><i>6</i> <span class="sd">2. Modify the value of a specified element of the array arr[i] = x where 0 &lt;= i &lt;= n-1.</span></tt>
+            </div>
+            <div id="l7"
+               class="code sev- "><tt><i>7</i> &nbsp;</tt>
+            </div>
+            <div id="l8"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (128 > 79 characters)</li>
+               
+               </ul><tt><i>8</i> <span class="sd">A simple solution is to run a loop from 0 to i-1 and calculate the sum of the elements. To update a value, simply do arr[i] = x.</span></tt>
+            </div>
+            <div id="l9"
+               class="code sev- "><tt><i>9</i> <span class="sd">The first operation takes O(n) time and the second operation takes O(1) time.</span></tt>
+            </div>
+            <div id="l10"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (133 > 79 characters)</li>
+               
+               </ul><tt><i>10</i> <span class="sd">Another simple solution is to create an extra array and store the sum of the first i-th elements at the i-th index in this new array.</span></tt>
+            </div>
+            <div id="l11"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (106 > 79 characters)</li>
+               
+               </ul><tt><i>11</i> <span class="sd">The sum of a given range can now be calculated in O(1) time, but the update operation takes O(n) time now.</span></tt>
+            </div>
+            <div id="l12"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (107 > 79 characters)</li>
+               
+               </ul><tt><i>12</i> <span class="sd">This works well if there are a large number of query operations but a very few number of update operations.</span></tt>
+            </div>
+            <div id="l13"
+               class="code sev- "><tt><i>13</i> &nbsp;</tt>
+            </div>
+            <div id="l14"
+               class="code sev- "><tt><i>14</i> &nbsp;</tt>
+            </div>
+            <div id="l15"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (94 > 79 characters)</li>
+               
+               </ul><tt><i>15</i> <span class="sd">There are two solutions that can perform both the query and update operations in O(logn) time.</span></tt>
+            </div>
+            <div id="l16"
+               class="code sev- "><tt><i>16</i> <span class="sd">1. Fenwick Tree</span></tt>
+            </div>
+            <div id="l17"
+               class="code sev- "><tt><i>17</i> <span class="sd">2. Segment Tree</span></tt>
+            </div>
+            <div id="l18"
+               class="code sev- "><tt><i>18</i> &nbsp;</tt>
+            </div>
+            <div id="l19"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (95 > 79 characters)</li>
+               
+               </ul><tt><i>19</i> <span class="sd">Compared with Segment Tree, Binary Indexed Tree requires less space and is easier to implement.</span></tt>
+            </div>
+            <div id="l20"
+               class="code sev- "><tt><i>20</i> <span class="sd">&quot;&quot;&quot;</span></tt>
+            </div>
+            <div id="l21"
+               class="code sev- "><tt><i>21</i> &nbsp;</tt>
+            </div>
+            <div id="l22"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E302
+                     </span>
+                     Expected 2 blank lines, found 1</li>
+               
+               </ul><tt><i>22</i> <span class="k">class</span> <span class="nc">Fenwick_Tree</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span></tt>
+            </div>
+            <div id="l23"
+               class="code sev- "><tt><i>23</i>     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">freq</span><span class="p">):</span></tt>
+            </div>
+            <div id="l24"
+               class="code sev- "><tt><i>24</i>         <span class="bp">self</span><span class="o">.</span><span class="n">arr</span> <span class="o">=</span> <span class="n">freq</span></tt>
+            </div>
+            <div id="l25"
+               class="code sev- "><tt><i>25</i>         <span class="bp">self</span><span class="o">.</span><span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">freq</span><span class="p">)</span></tt>
+            </div>
+            <div id="l26"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W293
+                     </span>
+                     Blank line contains whitespace</li>
+               
+               </ul><tt><i>26</i>         </tt>
+            </div>
+            <div id="l27"
+               class="code sev- "><tt><i>27</i>     <span class="k">def</span> <span class="nf">get_sum</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bit_tree</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span></tt>
+            </div>
+            <div id="l28"
+               class="code sev- "><tt><i>28</i> <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span></tt>
+            </div>
+            <div id="l29"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (156 > 79 characters)</li>
+               
+                  <li>
+                     <span class="count sev-2">
+                        W291
+                     </span>
+                     Trailing whitespace</li>
+               
+               </ul><tt><i>29</i> <span class="sd">             Returns sum of arr[0..index]. This function assumes that the array is preprocessed and partial sums of array elements are stored in bit_tree[]. </span></tt>
+            </div>
+            <div id="l30"
+               class="code sev- "><tt><i>30</i> <span class="sd">        &quot;&quot;&quot;</span></tt>
+            </div>
+            <div id="l31"
+               class="code sev- "><tt><i>31</i> &nbsp;</tt>
+            </div>
+            <div id="l32"
+               class="code sev- "><tt><i>32</i>         <span class="n">s</span> <span class="o">=</span> <span class="mi">0</span></tt>
+            </div>
+            <div id="l33"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W293
+                     </span>
+                     Blank line contains whitespace</li>
+               
+               </ul><tt><i>33</i>       </tt>
+            </div>
+            <div id="l34"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W291
+                     </span>
+                     Trailing whitespace</li>
+               
+               </ul><tt><i>34</i>         <span class="c1"># index in bit_tree[] is 1 more than the index in arr[] </span></tt>
+            </div>
+            <div id="l35"
+               class="code sev- "><tt><i>35</i>         <span class="n">i</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span></tt>
+            </div>
+            <div id="l36"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W293
+                     </span>
+                     Blank line contains whitespace</li>
+               
+               </ul><tt><i>36</i>       </tt>
+            </div>
+            <div id="l37"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W291
+                     </span>
+                     Trailing whitespace</li>
+               
+               </ul><tt><i>37</i>         <span class="c1"># Traverse ancestors of bit_tree[index] </span></tt>
+            </div>
+            <div id="l38"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W291
+                     </span>
+                     Trailing whitespace</li>
+               
+               </ul><tt><i>38</i>         <span class="k">while</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span> </tt>
+            </div>
+            <div id="l39"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W293
+                     </span>
+                     Blank line contains whitespace</li>
+               
+               </ul><tt><i>39</i>       </tt>
+            </div>
+            <div id="l40"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W291
+                     </span>
+                     Trailing whitespace</li>
+               
+               </ul><tt><i>40</i>             <span class="c1"># Add current element of bit_tree to sum </span></tt>
+            </div>
+            <div id="l41"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W291
+                     </span>
+                     Trailing whitespace</li>
+               
+               </ul><tt><i>41</i>             <span class="n">s</span> <span class="o">+=</span> <span class="n">bit_tree</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> </tt>
+            </div>
+            <div id="l42"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W293
+                     </span>
+                     Blank line contains whitespace</li>
+               
+               </ul><tt><i>42</i>       </tt>
+            </div>
+            <div id="l43"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W291
+                     </span>
+                     Trailing whitespace</li>
+               
+               </ul><tt><i>43</i>             <span class="c1"># Move index to parent node in getSum View </span></tt>
+            </div>
+            <div id="l44"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W291
+                     </span>
+                     Trailing whitespace</li>
+               
+               </ul><tt><i>44</i>             <span class="n">i</span> <span class="o">-=</span> <span class="n">i</span> <span class="o">&amp;</span> <span class="p">(</span><span class="o">-</span><span class="n">i</span><span class="p">)</span> </tt>
+            </div>
+            <div id="l45"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W291
+                     </span>
+                     Trailing whitespace</li>
+               
+               </ul><tt><i>45</i>         <span class="k">return</span> <span class="n">s</span> </tt>
+            </div>
+            <div id="l46"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W293
+                     </span>
+                     Blank line contains whitespace</li>
+               
+               </ul><tt><i>46</i>       </tt>
+            </div>
+            <div id="l47"
+               class="code sev- "><tt><i>47</i>     <span class="k">def</span> <span class="nf">update_bit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bit_tree</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span></tt>
+            </div>
+            <div id="l48"
+               class="code sev- "><tt><i>48</i> <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span></tt>
+            </div>
+            <div id="l49"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (167 > 79 characters)</li>
+               
+                  <li>
+                     <span class="count sev-2">
+                        W291
+                     </span>
+                     Trailing whitespace</li>
+               
+               </ul><tt><i>49</i> <span class="sd">             Updates a node in Binary Index Tree (bit_tree) at given index in bit_tree. The given value &#39;val&#39; is added to bit_tree[i] and all of its ancestors in tree. </span></tt>
+            </div>
+            <div id="l50"
+               class="code sev- "><tt><i>50</i> <span class="sd">        &quot;&quot;&quot;</span></tt>
+            </div>
+            <div id="l51"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W293
+                     </span>
+                     Blank line contains whitespace</li>
+               
+               </ul><tt><i>51</i>       </tt>
+            </div>
+            <div id="l52"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W291
+                     </span>
+                     Trailing whitespace</li>
+               
+               </ul><tt><i>52</i>         <span class="c1"># index in bit_ree[] is 1 more than the index in arr[] </span></tt>
+            </div>
+            <div id="l53"
+               class="code sev- "><tt><i>53</i>         <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span></tt>
+            </div>
+            <div id="l54"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W293
+                     </span>
+                     Blank line contains whitespace</li>
+               
+               </ul><tt><i>54</i>       </tt>
+            </div>
+            <div id="l55"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W291
+                     </span>
+                     Trailing whitespace</li>
+               
+               </ul><tt><i>55</i>         <span class="c1"># Traverse all ancestors and add &#39;val&#39; </span></tt>
+            </div>
+            <div id="l56"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W291
+                     </span>
+                     Trailing whitespace</li>
+               
+               </ul><tt><i>56</i>         <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">n</span><span class="p">:</span> </tt>
+            </div>
+            <div id="l57"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W293
+                     </span>
+                     Blank line contains whitespace</li>
+               
+               </ul><tt><i>57</i>       </tt>
+            </div>
+            <div id="l58"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W291
+                     </span>
+                     Trailing whitespace</li>
+               
+               </ul><tt><i>58</i>             <span class="c1"># Add &#39;val&#39; to current node of bit_tree </span></tt>
+            </div>
+            <div id="l59"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W291
+                     </span>
+                     Trailing whitespace</li>
+               
+               </ul><tt><i>59</i>             <span class="n">bit_tree</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+=</span> <span class="n">v</span> </tt>
+            </div>
+            <div id="l60"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W293
+                     </span>
+                     Blank line contains whitespace</li>
+               
+               </ul><tt><i>60</i>       </tt>
+            </div>
+            <div id="l61"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W291
+                     </span>
+                     Trailing whitespace</li>
+               
+               </ul><tt><i>61</i>             <span class="c1"># Update index to that of parent in update View </span></tt>
+            </div>
+            <div id="l62"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W291
+                     </span>
+                     Trailing whitespace</li>
+               
+               </ul><tt><i>62</i>             <span class="n">i</span> <span class="o">+=</span> <span class="n">i</span> <span class="o">&amp;</span> <span class="p">(</span><span class="o">-</span><span class="n">i</span><span class="p">)</span> </tt>
+            </div>
+            <div id="l63"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W293
+                     </span>
+                     Blank line contains whitespace</li>
+               
+               </ul><tt><i>63</i>       </tt>
+            </div>
+            <div id="l64"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W293
+                     </span>
+                     Blank line contains whitespace</li>
+               
+               </ul><tt><i>64</i>       </tt>
+            </div>
+            <div id="l65"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E303
+                     </span>
+                     Too many blank lines (2)</li>
+               
+               </ul><tt><i>65</i>     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
+            </div>
+            <div id="l66"
+               class="code sev- "><tt><i>66</i> <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span></tt>
+            </div>
+            <div id="l67"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (84 > 79 characters)</li>
+               
+                  <li>
+                     <span class="count sev-2">
+                        W291
+                     </span>
+                     Trailing whitespace</li>
+               
+               </ul><tt><i>67</i> <span class="sd">             Constructs and returns a Binary Indexed Tree for given array of size n. </span></tt>
+            </div>
+            <div id="l68"
+               class="code sev- "><tt><i>68</i> <span class="sd">        &quot;&quot;&quot;</span></tt>
+            </div>
+            <div id="l69"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W293
+                     </span>
+                     Blank line contains whitespace</li>
+               
+               </ul><tt><i>69</i>       </tt>
+            </div>
+            <div id="l70"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W291
+                     </span>
+                     Trailing whitespace</li>
+               
+               </ul><tt><i>70</i>         <span class="c1"># Create and initialize bit_ree[] as 0 </span></tt>
+            </div>
+            <div id="l71"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W291
+                     </span>
+                     Trailing whitespace</li>
+               
+               </ul><tt><i>71</i>         <span class="n">bit_tree</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> </tt>
+            </div>
+            <div id="l72"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W293
+                     </span>
+                     Blank line contains whitespace</li>
+               
+               </ul><tt><i>72</i>       </tt>
+            </div>
+            <div id="l73"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W291
+                     </span>
+                     Trailing whitespace</li>
+               
+               </ul><tt><i>73</i>         <span class="c1"># Store the actual values in bit_ree[] using update() </span></tt>
+            </div>
+            <div id="l74"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W291
+                     </span>
+                     Trailing whitespace</li>
+               
+               </ul><tt><i>74</i>         <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">n</span><span class="p">):</span> </tt>
+            </div>
+            <div id="l75"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W291
+                     </span>
+                     Trailing whitespace</li>
+               
+               </ul><tt><i>75</i>             <span class="bp">self</span><span class="o">.</span><span class="n">update_bit</span><span class="p">(</span><span class="n">bit_tree</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> </tt>
+            </div>
+            <div id="l76"
+               class="code sev- "><tt><i>76</i> &nbsp;</tt>
+            </div>
+            <div id="l77"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        W291
+                     </span>
+                     Trailing whitespace</li>
+               
+               </ul><tt><i>77</i>         <span class="k">return</span> <span class="n">bit_tree</span> </tt>
+            </div>
+            
+         </div>
+      </div>
+   </body>
+</html>

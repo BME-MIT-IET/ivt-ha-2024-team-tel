@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>algorithms/tree/pretty_print.py - flake8 annotated source</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <div id="masthead" class="sev-2"></div>
+      <div id="page">
+         <h1>
+            <a href="algorithms.tree.pretty_print.report.html">
+               <img src="back.svg" alt="&#x2B05;">
+               algorithms/tree/pretty_print.py source
+            </a>
+         </h1>
+
+         <div id="doc">
+            <div id="l1"
+               class="code sev- "><tt><i>1</i> <span class="c1"># a -&gt; Adam -&gt; Book -&gt; 4</span></tt>
+            </div>
+            <div id="l2"
+               class="code sev- "><tt><i>2</i> <span class="c1"># b -&gt; Bill -&gt; Computer -&gt; 5</span></tt>
+            </div>
+            <div id="l3"
+               class="code sev- "><tt><i>3</i> <span class="c1">#           -&gt; TV -&gt; 6</span></tt>
+            </div>
+            <div id="l4"
+               class="code sev- "><tt><i>4</i> <span class="c1">#      Jill -&gt; Sports -&gt; 1</span></tt>
+            </div>
+            <div id="l5"
+               class="code sev- "><tt><i>5</i> <span class="c1"># c -&gt; Bill -&gt; Sports -&gt; 3</span></tt>
+            </div>
+            <div id="l6"
+               class="code sev- "><tt><i>6</i> <span class="c1"># d -&gt; Adam -&gt; Computer -&gt; 3</span></tt>
+            </div>
+            <div id="l7"
+               class="code sev- "><tt><i>7</i> <span class="c1">#      Quin -&gt; Computer -&gt; 3</span></tt>
+            </div>
+            <div id="l8"
+               class="code sev- "><tt><i>8</i> <span class="c1"># e -&gt; Quin -&gt; Book -&gt; 5</span></tt>
+            </div>
+            <div id="l9"
+               class="code sev- "><tt><i>9</i> <span class="c1">#           -&gt; TV -&gt; 2</span></tt>
+            </div>
+            <div id="l10"
+               class="code sev- "><tt><i>10</i> <span class="c1"># f -&gt; Adam -&gt; Computer -&gt; 7</span></tt>
+            </div>
+            <div id="l11"
+               class="code sev- "><tt><i>11</i> &nbsp;</tt>
+            </div>
+            <div id="l12"
+               class="code sev- "><tt><i>12</i> <span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span></tt>
+            </div>
+            <div id="l13"
+               class="code sev- "><tt><i>13</i> &nbsp;</tt>
+            </div>
+            <div id="l14"
+               class="code sev- "><tt><i>14</i> &nbsp;</tt>
+            </div>
+            <div id="l15"
+               class="code sev- "><tt><i>15</i> <span class="k">def</span> <span class="nf">tree_print</span><span class="p">(</span><span class="n">tree</span><span class="p">):</span></tt>
+            </div>
+            <div id="l16"
+               class="code sev- "><tt><i>16</i>     <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">tree</span><span class="p">:</span></tt>
+            </div>
+            <div id="l17"
+               class="code sev- "><tt><i>17</i>         <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>  <span class="c1"># end=&#39; &#39; prevents a newline character</span></tt>
+            </div>
+            <div id="l18"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E501
+                     </span>
+                     Line too long (87 > 79 characters)</li>
+               
+               </ul><tt><i>18</i>         <span class="n">tree_element</span> <span class="o">=</span> <span class="n">tree</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>  <span class="c1"># multiple lookups is expensive, even amortized O(1)!</span></tt>
+            </div>
+            <div id="l19"
+               class="code sev- "><tt><i>19</i>         <span class="k">for</span> <span class="n">subElem</span> <span class="ow">in</span> <span class="n">tree_element</span><span class="p">:</span></tt>
+            </div>
+            <div id="l20"
+               class="code sev- "><tt><i>20</i>             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; -&gt; &quot;</span><span class="p">,</span> <span class="n">subElem</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span></tt>
+            </div>
+            <div id="l21"
+               class="code sev-2  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-2">
+                        E721
+                     </span>
+                     Do not compare types, for exact checks use `is` / `is not`, for instance checks use `isinstance()`</li>
+               
+               </ul><tt><i>21</i>             <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">subElem</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">str</span><span class="p">:</span>  <span class="c1"># OP wants indenting after digits</span></tt>
+            </div>
+            <div id="l22"
+               class="code sev- "><tt><i>22</i>                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> &quot;</span><span class="p">)</span>  <span class="c1"># newline and a space to match indenting</span></tt>
+            </div>
+            <div id="l23"
+               class="code sev- "><tt><i>23</i>         <span class="nb">print</span><span class="p">()</span>  <span class="c1"># forces a newline</span></tt>
+            </div>
+            
+         </div>
+      </div>
+   </body>
+</html>

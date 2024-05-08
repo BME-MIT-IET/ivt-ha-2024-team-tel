@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>flake8 violations: algorithms/strings/__init__.py</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+<script>
+function bindHandler(link) {
+   var code = link.getAttribute('data-code');
+   var key = location.pathname + '#' + code;
+
+   var ul = link.parentNode.querySelector('.details');
+   if (sessionStorage[key] != 'open') {
+      ul.style.display = 'none';
+   }
+   link.addEventListener('click', function (event) {
+      if (!ul.style.display || ul.style.display == 'none') {
+         ul.style.display = 'block';
+         sessionStorage[key] = 'open';
+      } else {
+         ul.style.display = 'none';
+         sessionStorage[key] = 'closed';
+      }
+   });
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+   var links = document.querySelectorAll('#index > li > a');
+   for (var i = 0; i < links.length; i++) {
+      bindHandler(links[i]);
+   }
+});
+</script>
+   </head>
+   <body>
+      <div id="masthead" class="sev-1"></div>
+      <div id="page">
+         <p id="srclink">
+            <a title="View full annotated source"
+               href="algorithms.strings.__init__.source.html">
+               <img src="file.svg" alt="&#x2261;">
+            </a></p>
+         <h1>
+            <a href="index.html">
+               <img src="back.svg" alt="&#x2B05;">
+               algorithms/strings/__init__.py
+            </a>
+         </h1>
+
+         <ul id="index">
+         
+         <li>
+            <a data-code="F401">
+               <span class="count sev-1">
+                  41
+               </span>
+               <strong>F401:</strong> '.add_binary.*' imported but unused
+               
+                  (and 40 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>'.add_binary.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l1">
+                  <tt><i>1</i> <span class="kn">from</span> <span class="nn">.add_binary</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.breaking_bad.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l2">
+                  <tt><i>2</i> <span class="kn">from</span> <span class="nn">.breaking_bad</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.decode_string.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l3">
+                  <tt><i>3</i> <span class="kn">from</span> <span class="nn">.decode_string</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.delete_reoccurring.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l4">
+                  <tt><i>4</i> <span class="kn">from</span> <span class="nn">.delete_reoccurring</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.domain_extractor.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l5">
+                  <tt><i>5</i> <span class="kn">from</span> <span class="nn">.domain_extractor</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.encode_decode.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l6">
+                  <tt><i>6</i> <span class="kn">from</span> <span class="nn">.encode_decode</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.group_anagrams.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l7">
+                  <tt><i>7</i> <span class="kn">from</span> <span class="nn">.group_anagrams</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.int_to_roman.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l8">
+                  <tt><i>8</i> <span class="kn">from</span> <span class="nn">.int_to_roman</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.is_palindrome.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l9">
+                  <tt><i>9</i> <span class="kn">from</span> <span class="nn">.is_palindrome</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.is_rotated.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l10">
+                  <tt><i>10</i> <span class="kn">from</span> <span class="nn">.is_rotated</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.license_number.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l11">
+                  <tt><i>11</i> <span class="kn">from</span> <span class="nn">.license_number</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.make_sentence.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l12">
+                  <tt><i>12</i> <span class="kn">from</span> <span class="nn">.make_sentence</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.merge_string_checker.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l13">
+                  <tt><i>13</i> <span class="kn">from</span> <span class="nn">.merge_string_checker</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.multiply_strings.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l14">
+                  <tt><i>14</i> <span class="kn">from</span> <span class="nn">.multiply_strings</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.one_edit_distance.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l15">
+                  <tt><i>15</i> <span class="kn">from</span> <span class="nn">.one_edit_distance</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.rabin_karp.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l16">
+                  <tt><i>16</i> <span class="kn">from</span> <span class="nn">.rabin_karp</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.reverse_string.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l17">
+                  <tt><i>17</i> <span class="kn">from</span> <span class="nn">.reverse_string</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.reverse_vowel.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l18">
+                  <tt><i>18</i> <span class="kn">from</span> <span class="nn">.reverse_vowel</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.reverse_words.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l19">
+                  <tt><i>19</i> <span class="kn">from</span> <span class="nn">.reverse_words</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.roman_to_int.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l20">
+                  <tt><i>20</i> <span class="kn">from</span> <span class="nn">.roman_to_int</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.strip_url_params.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l21">
+                  <tt><i>21</i> <span class="kn">from</span> <span class="nn">.strip_url_params</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.validate_coordinates.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l22">
+                  <tt><i>22</i> <span class="kn">from</span> <span class="nn">.validate_coordinates</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.word_squares.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l23">
+                  <tt><i>23</i> <span class="kn">from</span> <span class="nn">.word_squares</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.unique_morse.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l24">
+                  <tt><i>24</i> <span class="kn">from</span> <span class="nn">.unique_morse</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.judge_circle.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l25">
+                  <tt><i>25</i> <span class="kn">from</span> <span class="nn">.judge_circle</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.strong_password.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l26">
+                  <tt><i>26</i> <span class="kn">from</span> <span class="nn">.strong_password</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.caesar_cipher.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l27">
+                  <tt><i>27</i> <span class="kn">from</span> <span class="nn">.caesar_cipher</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.check_pangram.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l28">
+                  <tt><i>28</i> <span class="kn">from</span> <span class="nn">.check_pangram</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.contain_string.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l29">
+                  <tt><i>29</i> <span class="kn">from</span> <span class="nn">.contain_string</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.count_binary_substring.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l30">
+                  <tt><i>30</i> <span class="kn">from</span> <span class="nn">.count_binary_substring</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.repeat_string.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l31">
+                  <tt><i>31</i> <span class="kn">from</span> <span class="nn">.repeat_string</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.text_justification.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l32">
+                  <tt><i>32</i> <span class="kn">from</span> <span class="nn">.text_justification</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.min_distance.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l33">
+                  <tt><i>33</i> <span class="kn">from</span> <span class="nn">.min_distance</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.longest_common_prefix.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l34">
+                  <tt><i>34</i> <span class="kn">from</span> <span class="nn">.longest_common_prefix</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.rotate.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l35">
+                  <tt><i>35</i> <span class="kn">from</span> <span class="nn">.rotate</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.first_unique_char.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l36">
+                  <tt><i>36</i> <span class="kn">from</span> <span class="nn">.first_unique_char</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.repeat_substring.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l37">
+                  <tt><i>37</i> <span class="kn">from</span> <span class="nn">.repeat_substring</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.atbash_cipher.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l38">
+                  <tt><i>38</i> <span class="kn">from</span> <span class="nn">.atbash_cipher</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.longest_palindromic_substring.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l39">
+                  <tt><i>39</i> <span class="kn">from</span> <span class="nn">.longest_palindromic_substring</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.knuth_morris_pratt.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l40">
+                  <tt><i>40</i> <span class="kn">from</span> <span class="nn">.knuth_morris_pratt</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'.panagram.*' imported but unused:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l41">
+                  <tt><i>41</i> <span class="kn">from</span> <span class="nn">.panagram</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="F403">
+               <span class="count sev-1">
+                  41
+               </span>
+               <strong>F403:</strong> 'from .add_binary import *' used; unable to detect undefined names
+               
+                  (and 40 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>'from .add_binary import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l1">
+                  <tt><i>1</i> <span class="kn">from</span> <span class="nn">.add_binary</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .breaking_bad import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l2">
+                  <tt><i>2</i> <span class="kn">from</span> <span class="nn">.breaking_bad</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .decode_string import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l3">
+                  <tt><i>3</i> <span class="kn">from</span> <span class="nn">.decode_string</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .delete_reoccurring import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l4">
+                  <tt><i>4</i> <span class="kn">from</span> <span class="nn">.delete_reoccurring</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .domain_extractor import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l5">
+                  <tt><i>5</i> <span class="kn">from</span> <span class="nn">.domain_extractor</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .encode_decode import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l6">
+                  <tt><i>6</i> <span class="kn">from</span> <span class="nn">.encode_decode</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .group_anagrams import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l7">
+                  <tt><i>7</i> <span class="kn">from</span> <span class="nn">.group_anagrams</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .int_to_roman import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l8">
+                  <tt><i>8</i> <span class="kn">from</span> <span class="nn">.int_to_roman</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .is_palindrome import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l9">
+                  <tt><i>9</i> <span class="kn">from</span> <span class="nn">.is_palindrome</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .is_rotated import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l10">
+                  <tt><i>10</i> <span class="kn">from</span> <span class="nn">.is_rotated</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .license_number import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l11">
+                  <tt><i>11</i> <span class="kn">from</span> <span class="nn">.license_number</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .make_sentence import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l12">
+                  <tt><i>12</i> <span class="kn">from</span> <span class="nn">.make_sentence</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .merge_string_checker import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l13">
+                  <tt><i>13</i> <span class="kn">from</span> <span class="nn">.merge_string_checker</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .multiply_strings import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l14">
+                  <tt><i>14</i> <span class="kn">from</span> <span class="nn">.multiply_strings</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .one_edit_distance import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l15">
+                  <tt><i>15</i> <span class="kn">from</span> <span class="nn">.one_edit_distance</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .rabin_karp import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l16">
+                  <tt><i>16</i> <span class="kn">from</span> <span class="nn">.rabin_karp</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .reverse_string import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l17">
+                  <tt><i>17</i> <span class="kn">from</span> <span class="nn">.reverse_string</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .reverse_vowel import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l18">
+                  <tt><i>18</i> <span class="kn">from</span> <span class="nn">.reverse_vowel</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .reverse_words import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l19">
+                  <tt><i>19</i> <span class="kn">from</span> <span class="nn">.reverse_words</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .roman_to_int import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l20">
+                  <tt><i>20</i> <span class="kn">from</span> <span class="nn">.roman_to_int</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .strip_url_params import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l21">
+                  <tt><i>21</i> <span class="kn">from</span> <span class="nn">.strip_url_params</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .validate_coordinates import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l22">
+                  <tt><i>22</i> <span class="kn">from</span> <span class="nn">.validate_coordinates</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .word_squares import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l23">
+                  <tt><i>23</i> <span class="kn">from</span> <span class="nn">.word_squares</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .unique_morse import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l24">
+                  <tt><i>24</i> <span class="kn">from</span> <span class="nn">.unique_morse</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .judge_circle import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l25">
+                  <tt><i>25</i> <span class="kn">from</span> <span class="nn">.judge_circle</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .strong_password import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l26">
+                  <tt><i>26</i> <span class="kn">from</span> <span class="nn">.strong_password</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .caesar_cipher import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l27">
+                  <tt><i>27</i> <span class="kn">from</span> <span class="nn">.caesar_cipher</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .check_pangram import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l28">
+                  <tt><i>28</i> <span class="kn">from</span> <span class="nn">.check_pangram</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .contain_string import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l29">
+                  <tt><i>29</i> <span class="kn">from</span> <span class="nn">.contain_string</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .count_binary_substring import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l30">
+                  <tt><i>30</i> <span class="kn">from</span> <span class="nn">.count_binary_substring</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .repeat_string import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l31">
+                  <tt><i>31</i> <span class="kn">from</span> <span class="nn">.repeat_string</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .text_justification import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l32">
+                  <tt><i>32</i> <span class="kn">from</span> <span class="nn">.text_justification</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .min_distance import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l33">
+                  <tt><i>33</i> <span class="kn">from</span> <span class="nn">.min_distance</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .longest_common_prefix import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l34">
+                  <tt><i>34</i> <span class="kn">from</span> <span class="nn">.longest_common_prefix</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .rotate import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l35">
+                  <tt><i>35</i> <span class="kn">from</span> <span class="nn">.rotate</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .first_unique_char import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l36">
+                  <tt><i>36</i> <span class="kn">from</span> <span class="nn">.first_unique_char</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .repeat_substring import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l37">
+                  <tt><i>37</i> <span class="kn">from</span> <span class="nn">.repeat_substring</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .atbash_cipher import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l38">
+                  <tt><i>38</i> <span class="kn">from</span> <span class="nn">.atbash_cipher</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .longest_palindromic_substring import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l39">
+                  <tt><i>39</i> <span class="kn">from</span> <span class="nn">.longest_palindromic_substring</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .knuth_morris_pratt import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l40">
+                  <tt><i>40</i> <span class="kn">from</span> <span class="nn">.knuth_morris_pratt</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'from .panagram import *' used; unable to detect undefined names:</p>
+               
+               <a href="algorithms.strings.__init__.source.html#l41">
+                  <tt><i>41</i> <span class="kn">from</span> <span class="nn">.panagram</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="W292">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>W292:</strong> no newline at end of file
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="algorithms.strings.__init__.source.html#l41">
+                  <tt><i>41</i> <span class="kn">from</span> <span class="nn">.panagram</span> <span class="kn">import</span> <span class="o">*</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         </ul>
+      </div>
+   </body>
+</html>
