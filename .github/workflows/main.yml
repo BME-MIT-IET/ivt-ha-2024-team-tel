@@ -27,32 +27,19 @@ jobs:
         mkdir -p reports
         flake8 . --format=html --htmldir=reports/flake8_report || echo "Flake8 failed"
 
-    - name: Convert HTML report to PNG
-      if: ${{ failure() }}
-      run: |
-        apt-get update && apt-get install -y wkhtmltopdf
-        wkhtmltoimage --format png reports/flake8_report/index.html static_analysis_reports/image/flake8_report.png
-
     - name: Create Static Analysis Reports Folder
-      run: |
-        mkdir -p static_analysis_reports/html
-        mkdir -p static_analysis_reports/image
+      run: mkdir -p static_analysis_reports
 
-    - name: Copy Flake8 HTML reports to repository
+    - name: Copy Flake8 report to repository
       run: |
-        cp -r reports/flake8_report/* static_analysis_reports/html/
-        echo "Flake8 HTML reports copied to static_analysis_reports/html folder"
-
-    - name: Copy Flake8 PNG reports to repository
-      if: ${{ failure() }}
-      run: |
-        cp -r reports/flake8_report/* static_analysis_reports/image/
-        echo "Flake8 PNG reports copied to static_analysis_reports/image folder"
+        rm -rf static_analysis_reports/*
+        cp -r reports/flake8_report/* static_analysis_reports/
+        echo "Flake8 report copied to static_analysis_reports folder"
 
     - name: Commit Reports to Repository
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@users.noreply.github.com"
         git add static_analysis_reports
-        git commit -m "Add Flake8 reports"
+        git commit -m "Add Flake8 report" || echo "No changes to commit"
         git push

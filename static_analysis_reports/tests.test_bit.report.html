@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', function () {
 </script>
    </head>
    <body>
-      <div id="masthead" class="sev-1"></div>
+      <div id="masthead" class="sev-2"></div>
       <div id="page">
          <p id="srclink">
             <a title="View full annotated source"
@@ -50,18 +50,159 @@ window.addEventListener('DOMContentLoaded', function () {
          <ul id="index">
          
          <li>
-            <a data-code="E999">
-               <span class="count sev-1">
-                  1
+            <a data-code="W293">
+               <span class="count sev-2">
+                  10
                </span>
-               <strong>E999:</strong> IndentationError: expected an indented block after class definition on line 271
+               <strong>W293:</strong> blank line contains whitespace
                
             </a>
             <ul class="details">
             <li>
                
+               <a href="tests.test_bit.source.html#l271">
+                  <tt><i>271</i>         </tt>
+               </a>
+            </li><li>
+               
                <a href="tests.test_bit.source.html#l273">
-                  <tt><i>273</i>     <span class="k">def</span> <span class="nf">test_count_ones_large_number</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
+                  <tt><i>273</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="tests.test_bit.source.html#l279">
+                  <tt><i>279</i>         </tt>
+               </a>
+            </li><li>
+               
+               <a href="tests.test_bit.source.html#l284">
+                  <tt><i>284</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="tests.test_bit.source.html#l289">
+                  <tt><i>289</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="tests.test_bit.source.html#l294">
+                  <tt><i>294</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="tests.test_bit.source.html#l299">
+                  <tt><i>299</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="tests.test_bit.source.html#l303">
+                  <tt><i>303</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="tests.test_bit.source.html#l311">
+                  <tt><i>311</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="tests.test_bit.source.html#l318">
+                  <tt><i>318</i>     </tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E501">
+               <span class="count sev-2">
+                  9
+               </span>
+               <strong>E501:</strong> line too long (93 > 79 characters)
+               
+                  (and 6 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Line too long (93 > 79 characters):</p>
+               
+               <a href="tests.test_bit.source.html#l283">
+                  <tt><i>283</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">flip_bit_longest_seq</span><span class="p">(</span><span class="n">all_ones</span><span class="p">),</span> <span class="mi">11</span><span class="p">)</span>  <span class="c1"># flipping any 0 gives all ones</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (110 > 79 characters):</p>
+               
+               <a href="tests.test_bit.source.html#l292">
+                  <tt><i>292</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">reverse_bits</span><span class="p">(</span><span class="mb">0b10101010101010101010101010101010</span><span class="p">),</span> <span class="mb">0b01010101010101010101010101010101</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (110 > 79 characters):</p>
+               
+               <a href="tests.test_bit.source.html#l293">
+                  <tt><i>293</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">reverse_bits</span><span class="p">(</span><span class="mb">0b11001100110011001100110011001100</span><span class="p">),</span> <span class="mb">0b00110011001100110011001100110011</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (95 > 79 characters):</p>
+               
+               <a href="tests.test_bit.source.html#l305">
+                  <tt><i>305</i>         <span class="c1"># Test get_bit, set_bit, clear_bit, update_bit with random positions on a larger number</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (98 > 79 characters):</p>
+               
+               <a href="tests.test_bit.source.html#l310">
+                  <tt><i>310</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">get_bit</span><span class="p">(</span><span class="n">update_bit</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">get_bit</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="n">pos</span><span class="p">)),</span> <span class="n">pos</span><span class="p">),</span> <span class="n">get_bit</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="n">pos</span><span class="p">))</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (96 > 79 characters):</p>
+               
+               <a href="tests.test_bit.source.html#l316">
+                  <tt><i>316</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">bytes_big_endian_to_int</span><span class="p">(</span><span class="n">int_to_bytes_big_endian</span><span class="p">(</span><span class="n">max_32bit</span><span class="p">)),</span> <span class="n">max_32bit</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (102 > 79 characters):</p>
+               
+               <a href="tests.test_bit.source.html#l317">
+                  <tt><i>317</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">bytes_little_endian_to_int</span><span class="p">(</span><span class="n">int_to_bytes_little_endian</span><span class="p">(</span><span class="n">max_64bit</span><span class="p">)),</span> <span class="n">max_64bit</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (102 > 79 characters):</p>
+               
+               <a href="tests.test_bit.source.html#l322">
+                  <tt><i>322</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">swap_pair</span><span class="p">(</span><span class="mb">0b11110000</span><span class="p">),</span> <span class="mb">0b11110000</span><span class="p">)</span>  <span class="c1"># Should handle even pairs without change</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (106 > 79 characters):</p>
+               
+               <a href="tests.test_bit.source.html#l333">
+                  <tt><i>333</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">binary_gap</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="mi">32</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># 2^32 is beyond the int range but conceptually applicable</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E302">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E302:</strong> expected 2 blank lines, found 1
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="tests.test_bit.source.html#l272">
+                  <tt><i>272</i> <span class="k">class</span> <span class="nc">EnhancedBitTests</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span></tt>
                </a>
             </li>
             </ul>

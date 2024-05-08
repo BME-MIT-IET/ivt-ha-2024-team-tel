@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', function () {
 </script>
    </head>
    <body>
-      <div id="masthead" class="sev-1"></div>
+      <div id="masthead" class="sev-2"></div>
       <div id="page">
          <p id="srclink">
             <a title="View full annotated source"
@@ -50,82 +50,11 @@ window.addEventListener('DOMContentLoaded', function () {
          <ul id="index">
          
          <li>
-            <a data-code="F821">
-               <span class="count sev-1">
-                  8
-               </span>
-               <strong>F821:</strong> undefined name 'shortest_distance'
-               
-            </a>
-            <ul class="details">
-            <li>
-               
-               <a href="tests.test_bfs.source.html#l65">
-                  <tt><i>65</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">shortest_distance</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Should return -1 if no buildings are present&quot;</span><span class="p">)</span></tt>
-               </a>
-            </li><li>
-               
-               <a href="tests.test_bfs.source.html#l69">
-                  <tt><i>69</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">shortest_distance</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Should return -1 if there is no empty space&quot;</span><span class="p">)</span></tt>
-               </a>
-            </li><li>
-               
-               <a href="tests.test_bfs.source.html#l73">
-                  <tt><i>73</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">shortest_distance</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;Should return total distance to all reachable plots&quot;</span><span class="p">)</span></tt>
-               </a>
-            </li><li>
-               
-               <a href="tests.test_bfs.source.html#l81">
-                  <tt><i>81</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">shortest_distance</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span> <span class="mi">7</span><span class="p">,</span> <span class="s2">&quot;Should return minimum distance sum to all buildings&quot;</span><span class="p">)</span></tt>
-               </a>
-            </li><li>
-               
-               <a href="tests.test_bfs.source.html#l89">
-                  <tt><i>89</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">shortest_distance</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Should return -1 if a cell is unreachable&quot;</span><span class="p">)</span></tt>
-               </a>
-            </li><li>
-               
-               <a href="tests.test_bfs.source.html#l99">
-                  <tt><i>99</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">shortest_distance</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span> <span class="mi">18</span><span class="p">,</span> <span class="s2">&quot;Should handle larger grids correctly&quot;</span><span class="p">)</span></tt>
-               </a>
-            </li><li>
-               
-               <a href="tests.test_bfs.source.html#l103">
-                  <tt><i>103</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">shortest_distance</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Single building should result in -1&quot;</span><span class="p">)</span></tt>
-               </a>
-            </li><li>
-               
-               <a href="tests.test_bfs.source.html#l105">
-                  <tt><i>105</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">shortest_distance</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Single empty space should result in -1&quot;</span><span class="p">)</span></tt>
-               </a>
-            </li>
-            </ul>
-         </li>
-         
-         <li>
-            <a data-code="F401">
-               <span class="count sev-1">
-                  1
-               </span>
-               <strong>F401:</strong> 'algorithms.bfs.shortest_distance_from_all_buildings' imported but unused
-               
-            </a>
-            <ul class="details">
-            <li>
-               
-               <a href="tests.test_bfs.source.html#l1">
-                  <tt><i>1</i> <span class="kn">from</span> <span class="nn">algorithms.bfs</span> <span class="kn">import</span> <span class="p">(</span></tt>
-               </a>
-            </li>
-            </ul>
-         </li>
-         
-         <li>
             <a data-code="E501">
                <span class="count sev-2">
                   8
                </span>
-               <strong>E501:</strong> line too long (101 > 79 characters)
+               <strong>E501:</strong> line too long (138 > 79 characters)
                
                   (and 6 similar)
                
@@ -133,59 +62,59 @@ window.addEventListener('DOMContentLoaded', function () {
             <ul class="details">
             <li>
                
-               <p>Line too long (101 > 79 characters):</p>
+               <p>Line too long (138 > 79 characters):</p>
                
-               <a href="tests.test_bfs.source.html#l65">
-                  <tt><i>65</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">shortest_distance</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Should return -1 if no buildings are present&quot;</span><span class="p">)</span></tt>
+               <a href="tests.test_bfs.source.html#l64">
+                  <tt><i>64</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">shortest_distance_from_all_buildings</span><span class="o">.</span><span class="n">shortest_distance</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Should return -1 if no buildings are present&quot;</span><span class="p">)</span></tt>
                </a>
             </li><li>
                
-               <p>Line too long (100 > 79 characters):</p>
+               <p>Line too long (137 > 79 characters):</p>
                
-               <a href="tests.test_bfs.source.html#l69">
-                  <tt><i>69</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">shortest_distance</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Should return -1 if there is no empty space&quot;</span><span class="p">)</span></tt>
+               <a href="tests.test_bfs.source.html#l68">
+                  <tt><i>68</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">shortest_distance_from_all_buildings</span><span class="o">.</span><span class="n">shortest_distance</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Should return -1 if there is no empty space&quot;</span><span class="p">)</span></tt>
                </a>
             </li><li>
                
-               <p>Line too long (107 > 79 characters):</p>
+               <p>Line too long (144 > 79 characters):</p>
                
-               <a href="tests.test_bfs.source.html#l73">
-                  <tt><i>73</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">shortest_distance</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;Should return total distance to all reachable plots&quot;</span><span class="p">)</span></tt>
+               <a href="tests.test_bfs.source.html#l72">
+                  <tt><i>72</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">shortest_distance_from_all_buildings</span><span class="o">.</span><span class="n">shortest_distance</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;Should return total distance to all reachable plots&quot;</span><span class="p">)</span></tt>
                </a>
             </li><li>
                
-               <p>Line too long (107 > 79 characters):</p>
+               <p>Line too long (144 > 79 characters):</p>
                
-               <a href="tests.test_bfs.source.html#l81">
-                  <tt><i>81</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">shortest_distance</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span> <span class="mi">7</span><span class="p">,</span> <span class="s2">&quot;Should return minimum distance sum to all buildings&quot;</span><span class="p">)</span></tt>
+               <a href="tests.test_bfs.source.html#l80">
+                  <tt><i>80</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">shortest_distance_from_all_buildings</span><span class="o">.</span><span class="n">shortest_distance</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span> <span class="mi">7</span><span class="p">,</span> <span class="s2">&quot;Should return minimum distance sum to all buildings&quot;</span><span class="p">)</span></tt>
                </a>
             </li><li>
                
-               <p>Line too long (98 > 79 characters):</p>
+               <p>Line too long (135 > 79 characters):</p>
                
-               <a href="tests.test_bfs.source.html#l89">
-                  <tt><i>89</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">shortest_distance</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Should return -1 if a cell is unreachable&quot;</span><span class="p">)</span></tt>
+               <a href="tests.test_bfs.source.html#l88">
+                  <tt><i>88</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">shortest_distance_from_all_buildings</span><span class="o">.</span><span class="n">shortest_distance</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Should return -1 if a cell is unreachable&quot;</span><span class="p">)</span></tt>
                </a>
             </li><li>
                
-               <p>Line too long (93 > 79 characters):</p>
+               <p>Line too long (130 > 79 characters):</p>
                
-               <a href="tests.test_bfs.source.html#l99">
-                  <tt><i>99</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">shortest_distance</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span> <span class="mi">18</span><span class="p">,</span> <span class="s2">&quot;Should handle larger grids correctly&quot;</span><span class="p">)</span></tt>
+               <a href="tests.test_bfs.source.html#l98">
+                  <tt><i>98</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">shortest_distance_from_all_buildings</span><span class="o">.</span><span class="n">shortest_distance</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span> <span class="mi">18</span><span class="p">,</span> <span class="s2">&quot;Should handle larger grids correctly&quot;</span><span class="p">)</span></tt>
                </a>
             </li><li>
                
-               <p>Line too long (92 > 79 characters):</p>
+               <p>Line too long (129 > 79 characters):</p>
                
-               <a href="tests.test_bfs.source.html#l103">
-                  <tt><i>103</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">shortest_distance</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Single building should result in -1&quot;</span><span class="p">)</span></tt>
+               <a href="tests.test_bfs.source.html#l102">
+                  <tt><i>102</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">shortest_distance_from_all_buildings</span><span class="o">.</span><span class="n">shortest_distance</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Single building should result in -1&quot;</span><span class="p">)</span></tt>
                </a>
             </li><li>
                
-               <p>Line too long (95 > 79 characters):</p>
+               <p>Line too long (132 > 79 characters):</p>
                
-               <a href="tests.test_bfs.source.html#l105">
-                  <tt><i>105</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">shortest_distance</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Single empty space should result in -1&quot;</span><span class="p">)</span></tt>
+               <a href="tests.test_bfs.source.html#l104">
+                  <tt><i>104</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">shortest_distance_from_all_buildings</span><span class="o">.</span><span class="n">shortest_distance</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Single empty space should result in -1&quot;</span><span class="p">)</span></tt>
                </a>
             </li>
             </ul>
@@ -202,8 +131,8 @@ window.addEventListener('DOMContentLoaded', function () {
             <ul class="details">
             <li>
                
-               <a href="tests.test_bfs.source.html#l61">
-                  <tt><i>61</i> <span class="k">class</span> <span class="nc">TestShortestDistance</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span></tt>
+               <a href="tests.test_bfs.source.html#l60">
+                  <tt><i>60</i> <span class="k">class</span> <span class="nc">TestShortestDistance</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span></tt>
                </a>
             </li>
             </ul>
@@ -220,8 +149,8 @@ window.addEventListener('DOMContentLoaded', function () {
             <ul class="details">
             <li>
                
-               <a href="tests.test_bfs.source.html#l107">
-                  <tt><i>107</i> <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span></tt>
+               <a href="tests.test_bfs.source.html#l106">
+                  <tt><i>106</i> <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span></tt>
                </a>
             </li>
             </ul>
@@ -238,8 +167,8 @@ window.addEventListener('DOMContentLoaded', function () {
             <ul class="details">
             <li>
                
-               <a href="tests.test_bfs.source.html#l106">
-                  <tt><i>106</i>         </tt>
+               <a href="tests.test_bfs.source.html#l105">
+                  <tt><i>105</i>         </tt>
                </a>
             </li>
             </ul>
