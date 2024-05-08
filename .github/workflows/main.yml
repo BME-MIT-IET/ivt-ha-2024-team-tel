@@ -32,6 +32,7 @@ jobs:
 
     - name: Copy Flake8 report to repository
       run: |
+        rm -rf static_analysis_reports/*
         cp -r reports/flake8_report/* static_analysis_reports/
         echo "Flake8 report copied to static_analysis_reports folder"
 
@@ -40,5 +41,5 @@ jobs:
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@users.noreply.github.com"
         git add static_analysis_reports
-        git commit -m "Add Flake8 report"
+        git commit -m "Add Flake8 report" || echo "No changes to commit"
         git push
