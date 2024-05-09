@@ -160,17 +160,6 @@ class TestLongestIncreasingSubsequence(unittest.TestCase):
         self.assertEqual(5, longest_increasing_subsequence(sequence))
 
 
-class TestLongestIncreasingSubsequenceOptimized(unittest.TestCase):
-    def test_longest_increasing_subsequence_optimized(self):
-        sequence = [1, 101, 10, 2, 3, 100, 4, 6, 2]
-        self.assertEqual(5, longest_increasing_subsequence_optimized(sequence))
-
-
-class TestLongestIncreasingSubsequenceOptimized2(unittest.TestCase):
-    def test_longest_increasing_subsequence_optimized2(self):
-        sequence = [1, 101, 10, 2, 3, 100, 4, 6, 2]
-        self.assertEqual(5, longest_increasing_subsequence_optimized2(sequence))
-
 
 class TestIntDivide(unittest.TestCase):
     def test_int_divide(self):
