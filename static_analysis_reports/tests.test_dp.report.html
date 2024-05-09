@@ -50,11 +50,11 @@ window.addEventListener('DOMContentLoaded', function () {
          <ul id="index">
          
          <li>
-            <a data-code="F401">
+            <a data-code="F405">
                <span class="count sev-1">
-                  2
+                  4
                </span>
-               <strong>F401:</strong> 'algorithms.dp.longest_increasing_subsequence_optimized' imported but unused
+               <strong>F405:</strong> 'encode_rle' may be undefined, or defined from star imports: algorithms.compression.rle_compression
                
                   (and 1 similar)
                
@@ -62,122 +62,49 @@ window.addEventListener('DOMContentLoaded', function () {
             <ul class="details">
             <li>
                
-               <p>'algorithms.dp.longest_increasing_subsequence_optimized' imported but unused:</p>
+               <p>'encode_rle' may be undefined, or defined from star imports: algorithms.compression.rle_compression:</p>
                
-               <a href="tests.test_dp.source.html#l1">
-                  <tt><i>1</i> <span class="kn">from</span> <span class="nn">algorithms.dp</span> <span class="kn">import</span> <span class="p">(</span></tt>
+               <a href="tests.test_dp.source.html#l31">
+                  <tt><i>31</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">encode_rle</span><span class="p">(</span><span class="n">input_str</span><span class="p">),</span> <span class="n">expected_output</span><span class="p">)</span></tt>
                </a>
             </li><li>
                
-               <p>'algorithms.dp.longest_increasing_subsequence_optimized2' imported but unused:</p>
+               <p>'decode_rle' may be undefined, or defined from star imports: algorithms.compression.rle_compression:</p>
                
-               <a href="tests.test_dp.source.html#l1">
-                  <tt><i>1</i> <span class="kn">from</span> <span class="nn">algorithms.dp</span> <span class="kn">import</span> <span class="p">(</span></tt>
+               <a href="tests.test_dp.source.html#l36">
+                  <tt><i>36</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">decode_rle</span><span class="p">(</span><span class="n">input_str</span><span class="p">),</span> <span class="n">expected_output</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'encode_rle' may be undefined, or defined from star imports: algorithms.compression.rle_compression:</p>
+               
+               <a href="tests.test_dp.source.html#l40">
+                  <tt><i>40</i>         <span class="n">encoded</span> <span class="o">=</span> <span class="n">encode_rle</span><span class="p">(</span><span class="n">input_str</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>'decode_rle' may be undefined, or defined from star imports: algorithms.compression.rle_compression:</p>
+               
+               <a href="tests.test_dp.source.html#l41">
+                  <tt><i>41</i>         <span class="n">decoded</span> <span class="o">=</span> <span class="n">decode_rle</span><span class="p">(</span><span class="n">encoded</span><span class="p">)</span></tt>
                </a>
             </li>
             </ul>
          </li>
          
          <li>
-            <a data-code="E231">
-               <span class="count sev-2">
-                  8
+            <a data-code="F403">
+               <span class="count sev-1">
+                  1
                </span>
-               <strong>E231:</strong> missing whitespace after ','
+               <strong>F403:</strong> 'from algorithms.compression.rle_compression import *' used; unable to detect undefined names
                
             </a>
             <ul class="details">
             <li>
                
-               <p>Missing whitespace after ',' (in 5 places):</p>
-               
-               <a href="tests.test_dp.source.html#l16">
-                  <tt><i>16</i>     <span class="n">int_divide</span><span class="p">,</span><span class="n">find_k_factor</span><span class="p">,</span><span class="n">elias_gamma_encode</span><span class="p">,</span><span class="n">elias_gamma_decode</span><span class="p">,</span><span class="n">elias_delta_encode</span><span class="p">,</span><span class="n">elias_delta_decode</span><span class="p">,</span></tt>
-               </a>
-            </li><li>
-               
-               <p>Missing whitespace after ',' (in 3 places):</p>
-               
-               <a href="tests.test_dp.source.html#l17">
-                  <tt><i>17</i>     <span class="n">planting_trees</span><span class="p">,</span> <span class="n">regex_matching</span><span class="p">,</span><span class="n">HuffmanCoding</span><span class="p">,</span><span class="n">encode_rle</span><span class="p">,</span><span class="n">decode_rle</span></tt>
-               </a>
-            </li>
-            </ul>
-         </li>
-         
-         <li>
-            <a data-code="E302">
-               <span class="count sev-2">
-                  5
-               </span>
-               <strong>E302:</strong> expected 2 blank lines, found 0
-               
-                  (and 1 similar)
-               
-            </a>
-            <ul class="details">
-            <li>
-               
-               <p>Expected 2 blank lines, found 0:</p>
-               
-               <a href="tests.test_dp.source.html#l23">
-                  <tt><i>23</i> <span class="k">class</span> <span class="nc">TestEliasCoding</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span></tt>
-               </a>
-            </li><li>
-               
-               <p>Expected 2 blank lines, found 0:</p>
-               
-               <a href="tests.test_dp.source.html#l45">
-                  <tt><i>45</i> <span class="k">class</span> <span class="nc">TestHuffmanCoding</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span></tt>
-               </a>
-            </li><li>
-               
-               <p>Expected 2 blank lines, found 1:</p>
-               
-               <a href="tests.test_dp.source.html#l63">
-                  <tt><i>63</i> <span class="k">class</span> <span class="nc">TestRLECompression</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span></tt>
-               </a>
-            </li><li>
-               
-               <p>Expected 2 blank lines, found 1:</p>
-               
-               <a href="tests.test_dp.source.html#l81">
-                  <tt><i>81</i> <span class="k">class</span> <span class="nc">TestBuySellStock</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span></tt>
-               </a>
-            </li><li>
-               
-               <p>Expected 2 blank lines, found 1:</p>
-               
-               <a href="tests.test_dp.source.html#l271">
-                  <tt><i>271</i> <span class="k">class</span> <span class="nc">TestRegexMatching</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span></tt>
-               </a>
-            </li>
-            </ul>
-         </li>
-         
-         <li>
-            <a data-code="E265">
-               <span class="count sev-2">
-                  3
-               </span>
-               <strong>E265:</strong> block comment should start with '# '
-               
-            </a>
-            <ul class="details">
-            <li>
-               
-               <a href="tests.test_dp.source.html#l22">
-                  <tt><i>22</i> <span class="c1">#added</span></tt>
-               </a>
-            </li><li>
-               
-               <a href="tests.test_dp.source.html#l44">
-                  <tt><i>44</i> <span class="c1">#added</span></tt>
-               </a>
-            </li><li>
-               
-               <a href="tests.test_dp.source.html#l62">
-                  <tt><i>62</i> <span class="c1">#added </span></tt>
+               <a href="tests.test_dp.source.html#l20">
+                  <tt><i>20</i> <span class="kn">from</span> <span class="nn">algorithms.compression.rle_compression</span> <span class="kn">import</span> <span class="o">*</span></tt>
                </a>
             </li>
             </ul>
@@ -188,7 +115,7 @@ window.addEventListener('DOMContentLoaded', function () {
                <span class="count sev-2">
                   2
                </span>
-               <strong>E501:</strong> line too long (105 > 79 characters)
+               <strong>E501:</strong> line too long (87 > 79 characters)
                
                   (and 1 similar)
                
@@ -196,53 +123,35 @@ window.addEventListener('DOMContentLoaded', function () {
             <ul class="details">
             <li>
                
-               <p>Line too long (105 > 79 characters):</p>
+               <p>Line too long (87 > 79 characters):</p>
                
-               <a href="tests.test_dp.source.html#l16">
-                  <tt><i>16</i>     <span class="n">int_divide</span><span class="p">,</span><span class="n">find_k_factor</span><span class="p">,</span><span class="n">elias_gamma_encode</span><span class="p">,</span><span class="n">elias_gamma_decode</span><span class="p">,</span><span class="n">elias_delta_encode</span><span class="p">,</span><span class="n">elias_delta_decode</span><span class="p">,</span></tt>
+               <a href="tests.test_dp.source.html#l152">
+                  <tt><i>152</i>         <span class="n">item1</span><span class="p">,</span> <span class="n">item2</span><span class="p">,</span> <span class="n">item3</span><span class="p">,</span> <span class="n">item4</span> <span class="o">=</span> <span class="n">Item</span><span class="p">(</span><span class="mi">60</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="n">Item</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">Item</span><span class="p">(</span><span class="mi">70</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">Item</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span></tt>
                </a>
             </li><li>
                
-               <p>Line too long (87 > 79 characters):</p>
+               <p>Line too long (80 > 79 characters):</p>
                
-               <a href="tests.test_dp.source.html#l188">
-                  <tt><i>188</i>         <span class="n">item1</span><span class="p">,</span> <span class="n">item2</span><span class="p">,</span> <span class="n">item3</span><span class="p">,</span> <span class="n">item4</span> <span class="o">=</span> <span class="n">Item</span><span class="p">(</span><span class="mi">60</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="n">Item</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">Item</span><span class="p">(</span><span class="mi">70</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">Item</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span></tt>
+               <a href="tests.test_dp.source.html#l172">
+                  <tt><i>172</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">longest_increasing_subsequence_optimized2</span><span class="p">(</span><span class="n">sequence</span><span class="p">))</span></tt>
                </a>
             </li>
             </ul>
          </li>
          
          <li>
-            <a data-code="W291">
+            <a data-code="E265">
                <span class="count sev-2">
                   1
                </span>
-               <strong>W291:</strong> trailing whitespace
+               <strong>E265:</strong> block comment should start with '# '
                
             </a>
             <ul class="details">
             <li>
                
-               <a href="tests.test_dp.source.html#l62">
-                  <tt><i>62</i> <span class="c1">#added </span></tt>
-               </a>
-            </li>
-            </ul>
-         </li>
-         
-         <li>
-            <a data-code="W293">
-               <span class="count sev-2">
-                  1
-               </span>
-               <strong>W293:</strong> blank line contains whitespace
-               
-            </a>
-            <ul class="details">
-            <li>
-               
-               <a href="tests.test_dp.source.html#l270">
-                  <tt><i>270</i>     </tt>
+               <a href="tests.test_dp.source.html#l25">
+                  <tt><i>25</i> <span class="c1">#added</span></tt>
                </a>
             </li>
             </ul>
