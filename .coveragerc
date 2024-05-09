@@ -4,4 +4,4 @@ omit =
     */site-packages/nose/*
     *__init__*
 include =
-    ./tests/*
+    tests/*
