@@ -21,6 +21,8 @@ N23.43345, E32.6457
 
 # my attempt
 import re
+
+
 def is_valid_coordinates_0(coordinates):
     for char in coordinates:
         if not (char.isdigit() or char in ['-', '.', ',', ' ']):
@@ -35,6 +37,7 @@ def is_valid_coordinates_0(coordinates):
         return False
     return -90 <= latitude <= 90 and -180 <= longitude <= 180
 
+
 # friends solutions
 def is_valid_coordinates_1(coordinates):
     try:
@@ -44,6 +47,7 @@ def is_valid_coordinates_1(coordinates):
 
     return lat <= 90 and lng <= 180
 
+
 # using regular expression
 def is_valid_coordinates_regular_expression(coordinates):
-    return bool(re.match("-?(\d|[1-8]\d|90)\.?\d*, -?(\d|[1-9]\d|1[0-7]\d|180)\.?\d*$", coordinates))  
+    return bool(re.match(r"-?(\d|[1-8]\d|90)\.?\d*, -?(\d|[1-9]\d|1[0-7]\d|180)\.?\d*$", coordinates))
