@@ -2,7 +2,51 @@ name: Pipeline
 
 on:
   push:
-  pull_request:
+  pull_request:name: Flake8
+
+on: [push, pull_request]
+
+jobs:
+  flake8:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.x
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install flake8
+        pip install flake8-html
+
+    - name: Run Flake8
+      id: flake8
+      run: |
+        mkdir -p reports
+        flake8 . --format=html --htmldir=reports/flake8_report || echo "Flake8 failed"
+
+    - name: Create Static Analysis Reports Folder
+      run: mkdir -p static_analysis_reports
+
+    - name: Copy Flake8 report to repository
+      run: |
+        rm -rf static_analysis_reports/*
+        cp -r reports/flake8_report/* static_analysis_reports/
+        echo "Flake8 report copied to static_analysis_reports folder"
+
+    - name: Commit Reports to Repository
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@users.noreply.github.com"
+        git add static_analysis_reports
+        git commit -m "Add Flake8 report" || echo "No changes to commit"
+        git push
 
 jobs:
   flake8:
