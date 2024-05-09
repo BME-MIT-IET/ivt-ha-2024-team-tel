@@ -1,6 +1,8 @@
-name: Pipiline
+name: Pipeline
 
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
 
 jobs:
   flake8:
@@ -38,9 +40,9 @@ jobs:
         echo "Flake8 report copied to static_analysis_reports folder"
 
     - name: Run Coverage
-      id: coverage
       run: |
-        mkdir -p coverage
+        mkdir -p coverage_html
+        coverage run -m unittest discover
         coverage html -d coverage_html
 
     - name: Create Coverage Reports Folder
