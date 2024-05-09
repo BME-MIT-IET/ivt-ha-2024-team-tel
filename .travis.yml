@@ -1,9 +1,29 @@
+#test
+group: travis_latest
+dist: xenial  # Travis CI's default distro
 language: python
-python:
-  - "3.6"
-  - "3.7"
-  - "3.8"
+cache:
+  directories:
+    - $HOME/.cache/pip
+matrix:
+    include:
+        - python: 3.6
+          env: TOX_ENV=py36
+        - python: 3.7
+          env: TOX_ENV=py37
 install:
-  - pip install -r requirements.txt
+    - pip install -r test_requirements.txt
+before_script:
+    # run black to check if some files would need reformatting
+    - black --check . || true
+    # exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
+    - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 script:
-  - python -m unittest discover tests
+    # Check python install package
+    - pip install -e .
+    - tox -e $TOX_ENV
+    # Check python uninstall package
+    - pip uninstall -y algorithms
+notifications:
+    on_success: change
+    on_failure: change  # `always` will be the setting once code changes slow down
