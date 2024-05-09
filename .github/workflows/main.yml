@@ -8,8 +8,6 @@ jobs:
   flake8:
     runs-on: ubuntu-latest
 
-    shell: /usr/bin/bash -e {0}  # Setting the shell to bash
-
     env:
       pythonLocation: /opt/hostedtoolcache/Python/3.12.3/x64
       LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.3/x64/lib
@@ -31,7 +29,7 @@ jobs:
         pip install coverage
 
     - name: Run Flake8
-      id: flake8
+      shell: bash
       run: |
         mkdir -p reports
         flake8 . --format=html --htmldir=reports/flake8_report || echo "Flake8 failed"
@@ -46,6 +44,7 @@ jobs:
         echo "Flake8 report copied to static_analysis_reports folder"
 
     - name: Run Coverage
+      shell: bash
       run: |
         mkdir -p coverage_html
         coverage run -m unittest discover
