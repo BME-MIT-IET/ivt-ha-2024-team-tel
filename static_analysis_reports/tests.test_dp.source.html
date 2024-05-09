@@ -17,7 +17,22 @@
 
          <div id="doc">
             <div id="l1"
-               class="code sev- "><tt><i>1</i> <span class="kn">from</span> <span class="nn">algorithms.dp</span> <span class="kn">import</span> <span class="p">(</span></tt>
+               class="code sev-1  le">
+               <ul class="violations">
+               
+                  <li>
+                     <span class="count sev-1">
+                        F401
+                     </span>
+                     'algorithms.dp.longest_increasing_subsequence_optimized' imported but unused</li>
+               
+                  <li>
+                     <span class="count sev-1">
+                        F401
+                     </span>
+                     'algorithms.dp.longest_increasing_subsequence_optimized2' imported but unused</li>
+               
+               </ul><tt><i>1</i> <span class="kn">from</span> <span class="nn">algorithms.dp</span> <span class="kn">import</span> <span class="p">(</span></tt>
             </div>
             <div id="l2"
                class="code sev- "><tt><i>2</i>     <span class="n">max_profit_naive</span><span class="p">,</span> <span class="n">max_profit_optimized</span><span class="p">,</span></tt>
@@ -566,331 +581,331 @@
                class="code sev- "><tt><i>162</i> &nbsp;</tt>
             </div>
             <div id="l163"
-               class="code sev- "><tt><i>163</i> <span class="k">class</span> <span class="nc">TestLongestIncreasingSubsequenceOptimized</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>163</i> &nbsp;</tt>
             </div>
             <div id="l164"
-               class="code sev- "><tt><i>164</i>     <span class="k">def</span> <span class="nf">test_longest_increasing_subsequence_optimized</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
-            </div>
-            <div id="l165"
-               class="code sev- "><tt><i>165</i>         <span class="n">sequence</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span></tt>
-            </div>
-            <div id="l166"
-               class="code sev- "><tt><i>166</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">longest_increasing_subsequence_optimized</span><span class="p">(</span><span class="n">sequence</span><span class="p">))</span></tt>
-            </div>
-            <div id="l167"
-               class="code sev- "><tt><i>167</i> &nbsp;</tt>
-            </div>
-            <div id="l168"
-               class="code sev- "><tt><i>168</i> &nbsp;</tt>
-            </div>
-            <div id="l169"
-               class="code sev- "><tt><i>169</i> <span class="k">class</span> <span class="nc">TestLongestIncreasingSubsequenceOptimized2</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span></tt>
-            </div>
-            <div id="l170"
-               class="code sev- "><tt><i>170</i>     <span class="k">def</span> <span class="nf">test_longest_increasing_subsequence_optimized2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
-            </div>
-            <div id="l171"
-               class="code sev- "><tt><i>171</i>         <span class="n">sequence</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span></tt>
-            </div>
-            <div id="l172"
                class="code sev-2  le">
                <ul class="violations">
                
                   <li>
                      <span class="count sev-2">
-                        E501
+                        E303
                      </span>
-                     Line too long (80 > 79 characters)</li>
+                     Too many blank lines (3)</li>
                
-               </ul><tt><i>172</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">longest_increasing_subsequence_optimized2</span><span class="p">(</span><span class="n">sequence</span><span class="p">))</span></tt>
+               </ul><tt><i>164</i> <span class="k">class</span> <span class="nc">TestIntDivide</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span></tt>
+            </div>
+            <div id="l165"
+               class="code sev- "><tt><i>165</i>     <span class="k">def</span> <span class="nf">test_int_divide</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
+            </div>
+            <div id="l166"
+               class="code sev- "><tt><i>166</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">int_divide</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span></tt>
+            </div>
+            <div id="l167"
+               class="code sev- "><tt><i>167</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="mi">42</span><span class="p">,</span> <span class="n">int_divide</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span></tt>
+            </div>
+            <div id="l168"
+               class="code sev- "><tt><i>168</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="mi">204226</span><span class="p">,</span> <span class="n">int_divide</span><span class="p">(</span><span class="mi">50</span><span class="p">))</span></tt>
+            </div>
+            <div id="l169"
+               class="code sev- "><tt><i>169</i> &nbsp;</tt>
+            </div>
+            <div id="l170"
+               class="code sev- "><tt><i>170</i> &nbsp;</tt>
+            </div>
+            <div id="l171"
+               class="code sev- "><tt><i>171</i> <span class="k">class</span> <span class="nc">Test_dp_K_Factor</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span></tt>
+            </div>
+            <div id="l172"
+               class="code sev- "><tt><i>172</i>     <span class="k">def</span> <span class="nf">test_kfactor</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
             </div>
             <div id="l173"
-               class="code sev- "><tt><i>173</i> &nbsp;</tt>
+               class="code sev- "><tt><i>173</i>         <span class="c1"># Test 1</span></tt>
             </div>
             <div id="l174"
-               class="code sev- "><tt><i>174</i> &nbsp;</tt>
+               class="code sev- "><tt><i>174</i>         <span class="n">n1</span> <span class="o">=</span> <span class="mi">4</span></tt>
             </div>
             <div id="l175"
-               class="code sev- "><tt><i>175</i> <span class="k">class</span> <span class="nc">TestIntDivide</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>175</i>         <span class="n">k1</span> <span class="o">=</span> <span class="mi">1</span></tt>
             </div>
             <div id="l176"
-               class="code sev- "><tt><i>176</i>     <span class="k">def</span> <span class="nf">test_int_divide</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>176</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">find_k_factor</span><span class="p">(</span><span class="n">n1</span><span class="p">,</span> <span class="n">k1</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span></tt>
             </div>
             <div id="l177"
-               class="code sev- "><tt><i>177</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">int_divide</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span></tt>
+               class="code sev- "><tt><i>177</i> &nbsp;</tt>
             </div>
             <div id="l178"
-               class="code sev- "><tt><i>178</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="mi">42</span><span class="p">,</span> <span class="n">int_divide</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span></tt>
+               class="code sev- "><tt><i>178</i>         <span class="c1"># Test 2</span></tt>
             </div>
             <div id="l179"
-               class="code sev- "><tt><i>179</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="mi">204226</span><span class="p">,</span> <span class="n">int_divide</span><span class="p">(</span><span class="mi">50</span><span class="p">))</span></tt>
+               class="code sev- "><tt><i>179</i>         <span class="n">n2</span> <span class="o">=</span> <span class="mi">7</span></tt>
             </div>
             <div id="l180"
-               class="code sev- "><tt><i>180</i> &nbsp;</tt>
+               class="code sev- "><tt><i>180</i>         <span class="n">k2</span> <span class="o">=</span> <span class="mi">1</span></tt>
             </div>
             <div id="l181"
-               class="code sev- "><tt><i>181</i> &nbsp;</tt>
+               class="code sev- "><tt><i>181</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">find_k_factor</span><span class="p">(</span><span class="n">n2</span><span class="p">,</span> <span class="n">k2</span><span class="p">),</span> <span class="mi">70302</span><span class="p">)</span></tt>
             </div>
             <div id="l182"
-               class="code sev- "><tt><i>182</i> <span class="k">class</span> <span class="nc">Test_dp_K_Factor</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>182</i> &nbsp;</tt>
             </div>
             <div id="l183"
-               class="code sev- "><tt><i>183</i>     <span class="k">def</span> <span class="nf">test_kfactor</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>183</i>         <span class="c1"># Test 3</span></tt>
             </div>
             <div id="l184"
-               class="code sev- "><tt><i>184</i>         <span class="c1"># Test 1</span></tt>
+               class="code sev- "><tt><i>184</i>         <span class="n">n3</span> <span class="o">=</span> <span class="mi">10</span></tt>
             </div>
             <div id="l185"
-               class="code sev- "><tt><i>185</i>         <span class="n">n1</span> <span class="o">=</span> <span class="mi">4</span></tt>
+               class="code sev- "><tt><i>185</i>         <span class="n">k3</span> <span class="o">=</span> <span class="mi">2</span></tt>
             </div>
             <div id="l186"
-               class="code sev- "><tt><i>186</i>         <span class="n">k1</span> <span class="o">=</span> <span class="mi">1</span></tt>
+               class="code sev- "><tt><i>186</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">find_k_factor</span><span class="p">(</span><span class="n">n3</span><span class="p">,</span> <span class="n">k3</span><span class="p">),</span> <span class="mi">74357</span><span class="p">)</span></tt>
             </div>
             <div id="l187"
-               class="code sev- "><tt><i>187</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">find_k_factor</span><span class="p">(</span><span class="n">n1</span><span class="p">,</span> <span class="n">k1</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>187</i> &nbsp;</tt>
             </div>
             <div id="l188"
-               class="code sev- "><tt><i>188</i> &nbsp;</tt>
+               class="code sev- "><tt><i>188</i>         <span class="c1"># Test 4</span></tt>
             </div>
             <div id="l189"
-               class="code sev- "><tt><i>189</i>         <span class="c1"># Test 2</span></tt>
+               class="code sev- "><tt><i>189</i>         <span class="n">n4</span> <span class="o">=</span> <span class="mi">8</span></tt>
             </div>
             <div id="l190"
-               class="code sev- "><tt><i>190</i>         <span class="n">n2</span> <span class="o">=</span> <span class="mi">7</span></tt>
+               class="code sev- "><tt><i>190</i>         <span class="n">k4</span> <span class="o">=</span> <span class="mi">2</span></tt>
             </div>
             <div id="l191"
-               class="code sev- "><tt><i>191</i>         <span class="n">k2</span> <span class="o">=</span> <span class="mi">1</span></tt>
+               class="code sev- "><tt><i>191</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">find_k_factor</span><span class="p">(</span><span class="n">n4</span><span class="p">,</span> <span class="n">k4</span><span class="p">),</span> <span class="mi">53</span><span class="p">)</span></tt>
             </div>
             <div id="l192"
-               class="code sev- "><tt><i>192</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">find_k_factor</span><span class="p">(</span><span class="n">n2</span><span class="p">,</span> <span class="n">k2</span><span class="p">),</span> <span class="mi">70302</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>192</i> &nbsp;</tt>
             </div>
             <div id="l193"
-               class="code sev- "><tt><i>193</i> &nbsp;</tt>
+               class="code sev- "><tt><i>193</i>         <span class="c1"># Test 5</span></tt>
             </div>
             <div id="l194"
-               class="code sev- "><tt><i>194</i>         <span class="c1"># Test 3</span></tt>
+               class="code sev- "><tt><i>194</i>         <span class="n">n5</span> <span class="o">=</span> <span class="mi">9</span></tt>
             </div>
             <div id="l195"
-               class="code sev- "><tt><i>195</i>         <span class="n">n3</span> <span class="o">=</span> <span class="mi">10</span></tt>
+               class="code sev- "><tt><i>195</i>         <span class="n">k5</span> <span class="o">=</span> <span class="mi">1</span></tt>
             </div>
             <div id="l196"
-               class="code sev- "><tt><i>196</i>         <span class="n">k3</span> <span class="o">=</span> <span class="mi">2</span></tt>
+               class="code sev- "><tt><i>196</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">find_k_factor</span><span class="p">(</span><span class="n">n5</span><span class="p">,</span> <span class="n">k5</span><span class="p">),</span> <span class="mi">71284044</span><span class="p">)</span></tt>
             </div>
             <div id="l197"
-               class="code sev- "><tt><i>197</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">find_k_factor</span><span class="p">(</span><span class="n">n3</span><span class="p">,</span> <span class="n">k3</span><span class="p">),</span> <span class="mi">74357</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>197</i> &nbsp;</tt>
             </div>
             <div id="l198"
                class="code sev- "><tt><i>198</i> &nbsp;</tt>
             </div>
             <div id="l199"
-               class="code sev- "><tt><i>199</i>         <span class="c1"># Test 4</span></tt>
+               class="code sev- "><tt><i>199</i> <span class="k">class</span> <span class="nc">TestPlantingTrees</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span></tt>
             </div>
             <div id="l200"
-               class="code sev- "><tt><i>200</i>         <span class="n">n4</span> <span class="o">=</span> <span class="mi">8</span></tt>
+               class="code sev- "><tt><i>200</i>     <span class="k">def</span> <span class="nf">test_simple</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
             </div>
             <div id="l201"
-               class="code sev- "><tt><i>201</i>         <span class="n">k4</span> <span class="o">=</span> <span class="mi">2</span></tt>
+               class="code sev- "><tt><i>201</i>         <span class="c1"># arrange</span></tt>
             </div>
             <div id="l202"
-               class="code sev- "><tt><i>202</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">find_k_factor</span><span class="p">(</span><span class="n">n4</span><span class="p">,</span> <span class="n">k4</span><span class="p">),</span> <span class="mi">53</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>202</i>         <span class="n">trees</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span></tt>
             </div>
             <div id="l203"
-               class="code sev- "><tt><i>203</i> &nbsp;</tt>
+               class="code sev- "><tt><i>203</i>         <span class="n">L</span> <span class="o">=</span> <span class="mi">10</span></tt>
             </div>
             <div id="l204"
-               class="code sev- "><tt><i>204</i>         <span class="c1"># Test 5</span></tt>
+               class="code sev- "><tt><i>204</i>         <span class="n">W</span> <span class="o">=</span> <span class="mi">1</span></tt>
             </div>
             <div id="l205"
-               class="code sev- "><tt><i>205</i>         <span class="n">n5</span> <span class="o">=</span> <span class="mi">9</span></tt>
+               class="code sev- "><tt><i>205</i> &nbsp;</tt>
             </div>
             <div id="l206"
-               class="code sev- "><tt><i>206</i>         <span class="n">k5</span> <span class="o">=</span> <span class="mi">1</span></tt>
+               class="code sev- "><tt><i>206</i>         <span class="c1"># act</span></tt>
             </div>
             <div id="l207"
-               class="code sev- "><tt><i>207</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">find_k_factor</span><span class="p">(</span><span class="n">n5</span><span class="p">,</span> <span class="n">k5</span><span class="p">),</span> <span class="mi">71284044</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>207</i>         <span class="n">res</span> <span class="o">=</span> <span class="n">planting_trees</span><span class="p">(</span><span class="n">trees</span><span class="p">,</span> <span class="n">L</span><span class="p">,</span> <span class="n">W</span><span class="p">)</span></tt>
             </div>
             <div id="l208"
                class="code sev- "><tt><i>208</i> &nbsp;</tt>
             </div>
             <div id="l209"
-               class="code sev- "><tt><i>209</i> &nbsp;</tt>
+               class="code sev- "><tt><i>209</i>         <span class="c1"># assert</span></tt>
             </div>
             <div id="l210"
-               class="code sev- "><tt><i>210</i> <span class="k">class</span> <span class="nc">TestPlantingTrees</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>210</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">res</span><span class="p">,</span> <span class="mf">2.414213562373095</span><span class="p">)</span></tt>
             </div>
             <div id="l211"
-               class="code sev- "><tt><i>211</i>     <span class="k">def</span> <span class="nf">test_simple</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>211</i> &nbsp;</tt>
             </div>
             <div id="l212"
-               class="code sev- "><tt><i>212</i>         <span class="c1"># arrange</span></tt>
+               class="code sev- "><tt><i>212</i>     <span class="k">def</span> <span class="nf">test_simple2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
             </div>
             <div id="l213"
-               class="code sev- "><tt><i>213</i>         <span class="n">trees</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span></tt>
+               class="code sev- "><tt><i>213</i>         <span class="c1"># arrange</span></tt>
             </div>
             <div id="l214"
-               class="code sev- "><tt><i>214</i>         <span class="n">L</span> <span class="o">=</span> <span class="mi">10</span></tt>
+               class="code sev- "><tt><i>214</i>         <span class="n">trees</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span></tt>
             </div>
             <div id="l215"
-               class="code sev- "><tt><i>215</i>         <span class="n">W</span> <span class="o">=</span> <span class="mi">1</span></tt>
+               class="code sev- "><tt><i>215</i>         <span class="n">L</span> <span class="o">=</span> <span class="mi">10</span></tt>
             </div>
             <div id="l216"
-               class="code sev- "><tt><i>216</i> &nbsp;</tt>
+               class="code sev- "><tt><i>216</i>         <span class="n">W</span> <span class="o">=</span> <span class="mi">1</span></tt>
             </div>
             <div id="l217"
-               class="code sev- "><tt><i>217</i>         <span class="c1"># act</span></tt>
+               class="code sev- "><tt><i>217</i> &nbsp;</tt>
             </div>
             <div id="l218"
-               class="code sev- "><tt><i>218</i>         <span class="n">res</span> <span class="o">=</span> <span class="n">planting_trees</span><span class="p">(</span><span class="n">trees</span><span class="p">,</span> <span class="n">L</span><span class="p">,</span> <span class="n">W</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>218</i>         <span class="c1"># act</span></tt>
             </div>
             <div id="l219"
-               class="code sev- "><tt><i>219</i> &nbsp;</tt>
+               class="code sev- "><tt><i>219</i>         <span class="n">res</span> <span class="o">=</span> <span class="n">planting_trees</span><span class="p">(</span><span class="n">trees</span><span class="p">,</span> <span class="n">L</span><span class="p">,</span> <span class="n">W</span><span class="p">)</span></tt>
             </div>
             <div id="l220"
-               class="code sev- "><tt><i>220</i>         <span class="c1"># assert</span></tt>
+               class="code sev- "><tt><i>220</i> &nbsp;</tt>
             </div>
             <div id="l221"
-               class="code sev- "><tt><i>221</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">res</span><span class="p">,</span> <span class="mf">2.414213562373095</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>221</i>         <span class="c1"># assert</span></tt>
             </div>
             <div id="l222"
-               class="code sev- "><tt><i>222</i> &nbsp;</tt>
+               class="code sev- "><tt><i>222</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">res</span><span class="p">,</span> <span class="mf">9.28538328578604</span><span class="p">)</span></tt>
             </div>
             <div id="l223"
-               class="code sev- "><tt><i>223</i>     <span class="k">def</span> <span class="nf">test_simple2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>223</i> &nbsp;</tt>
             </div>
             <div id="l224"
-               class="code sev- "><tt><i>224</i>         <span class="c1"># arrange</span></tt>
+               class="code sev- "><tt><i>224</i> &nbsp;</tt>
             </div>
             <div id="l225"
-               class="code sev- "><tt><i>225</i>         <span class="n">trees</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span></tt>
+               class="code sev- "><tt><i>225</i> <span class="k">class</span> <span class="nc">TestRegexMatching</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span></tt>
             </div>
             <div id="l226"
-               class="code sev- "><tt><i>226</i>         <span class="n">L</span> <span class="o">=</span> <span class="mi">10</span></tt>
+               class="code sev- "><tt><i>226</i>     <span class="k">def</span> <span class="nf">test_none_0</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
             </div>
             <div id="l227"
-               class="code sev- "><tt><i>227</i>         <span class="n">W</span> <span class="o">=</span> <span class="mi">1</span></tt>
+               class="code sev- "><tt><i>227</i>         <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span></tt>
             </div>
             <div id="l228"
-               class="code sev- "><tt><i>228</i> &nbsp;</tt>
+               class="code sev- "><tt><i>228</i>         <span class="n">p</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span></tt>
             </div>
             <div id="l229"
-               class="code sev- "><tt><i>229</i>         <span class="c1"># act</span></tt>
+               class="code sev- "><tt><i>229</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">regex_matching</span><span class="o">.</span><span class="n">is_match</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">p</span><span class="p">))</span></tt>
             </div>
             <div id="l230"
-               class="code sev- "><tt><i>230</i>         <span class="n">res</span> <span class="o">=</span> <span class="n">planting_trees</span><span class="p">(</span><span class="n">trees</span><span class="p">,</span> <span class="n">L</span><span class="p">,</span> <span class="n">W</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>230</i> &nbsp;</tt>
             </div>
             <div id="l231"
-               class="code sev- "><tt><i>231</i> &nbsp;</tt>
+               class="code sev- "><tt><i>231</i>     <span class="k">def</span> <span class="nf">test_none_1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
             </div>
             <div id="l232"
-               class="code sev- "><tt><i>232</i>         <span class="c1"># assert</span></tt>
+               class="code sev- "><tt><i>232</i>         <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span></tt>
             </div>
             <div id="l233"
-               class="code sev- "><tt><i>233</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">res</span><span class="p">,</span> <span class="mf">9.28538328578604</span><span class="p">)</span></tt>
+               class="code sev- "><tt><i>233</i>         <span class="n">p</span> <span class="o">=</span> <span class="s2">&quot;a&quot;</span></tt>
             </div>
             <div id="l234"
-               class="code sev- "><tt><i>234</i> &nbsp;</tt>
+               class="code sev- "><tt><i>234</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="n">regex_matching</span><span class="o">.</span><span class="n">is_match</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">p</span><span class="p">))</span></tt>
             </div>
             <div id="l235"
                class="code sev- "><tt><i>235</i> &nbsp;</tt>
             </div>
             <div id="l236"
-               class="code sev- "><tt><i>236</i> <span class="k">class</span> <span class="nc">TestRegexMatching</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>236</i>     <span class="k">def</span> <span class="nf">test_no_symbol_equal</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
             </div>
             <div id="l237"
-               class="code sev- "><tt><i>237</i>     <span class="k">def</span> <span class="nf">test_none_0</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>237</i>         <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;abcd&quot;</span></tt>
             </div>
             <div id="l238"
-               class="code sev- "><tt><i>238</i>         <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span></tt>
+               class="code sev- "><tt><i>238</i>         <span class="n">p</span> <span class="o">=</span> <span class="s2">&quot;abcd&quot;</span></tt>
             </div>
             <div id="l239"
-               class="code sev- "><tt><i>239</i>         <span class="n">p</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span></tt>
+               class="code sev- "><tt><i>239</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">regex_matching</span><span class="o">.</span><span class="n">is_match</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">p</span><span class="p">))</span></tt>
             </div>
             <div id="l240"
-               class="code sev- "><tt><i>240</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">regex_matching</span><span class="o">.</span><span class="n">is_match</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">p</span><span class="p">))</span></tt>
+               class="code sev- "><tt><i>240</i> &nbsp;</tt>
             </div>
             <div id="l241"
-               class="code sev- "><tt><i>241</i> &nbsp;</tt>
+               class="code sev- "><tt><i>241</i>     <span class="k">def</span> <span class="nf">test_no_symbol_not_equal_0</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
             </div>
             <div id="l242"
-               class="code sev- "><tt><i>242</i>     <span class="k">def</span> <span class="nf">test_none_1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>242</i>         <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;abcd&quot;</span></tt>
             </div>
             <div id="l243"
-               class="code sev- "><tt><i>243</i>         <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span></tt>
+               class="code sev- "><tt><i>243</i>         <span class="n">p</span> <span class="o">=</span> <span class="s2">&quot;efgh&quot;</span></tt>
             </div>
             <div id="l244"
-               class="code sev- "><tt><i>244</i>         <span class="n">p</span> <span class="o">=</span> <span class="s2">&quot;a&quot;</span></tt>
+               class="code sev- "><tt><i>244</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="n">regex_matching</span><span class="o">.</span><span class="n">is_match</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">p</span><span class="p">))</span></tt>
             </div>
             <div id="l245"
-               class="code sev- "><tt><i>245</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="n">regex_matching</span><span class="o">.</span><span class="n">is_match</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">p</span><span class="p">))</span></tt>
+               class="code sev- "><tt><i>245</i> &nbsp;</tt>
             </div>
             <div id="l246"
-               class="code sev- "><tt><i>246</i> &nbsp;</tt>
+               class="code sev- "><tt><i>246</i>     <span class="k">def</span> <span class="nf">test_no_symbol_not_equal_1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
             </div>
             <div id="l247"
-               class="code sev- "><tt><i>247</i>     <span class="k">def</span> <span class="nf">test_no_symbol_equal</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>247</i>         <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;ab&quot;</span></tt>
             </div>
             <div id="l248"
-               class="code sev- "><tt><i>248</i>         <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;abcd&quot;</span></tt>
+               class="code sev- "><tt><i>248</i>         <span class="n">p</span> <span class="o">=</span> <span class="s2">&quot;abb&quot;</span></tt>
             </div>
             <div id="l249"
-               class="code sev- "><tt><i>249</i>         <span class="n">p</span> <span class="o">=</span> <span class="s2">&quot;abcd&quot;</span></tt>
+               class="code sev- "><tt><i>249</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="n">regex_matching</span><span class="o">.</span><span class="n">is_match</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">p</span><span class="p">))</span></tt>
             </div>
             <div id="l250"
-               class="code sev- "><tt><i>250</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">regex_matching</span><span class="o">.</span><span class="n">is_match</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">p</span><span class="p">))</span></tt>
+               class="code sev- "><tt><i>250</i> &nbsp;</tt>
             </div>
             <div id="l251"
-               class="code sev- "><tt><i>251</i> &nbsp;</tt>
+               class="code sev- "><tt><i>251</i>     <span class="k">def</span> <span class="nf">test_symbol_0</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
             </div>
             <div id="l252"
-               class="code sev- "><tt><i>252</i>     <span class="k">def</span> <span class="nf">test_no_symbol_not_equal_0</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>252</i>         <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span></tt>
             </div>
             <div id="l253"
-               class="code sev- "><tt><i>253</i>         <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;abcd&quot;</span></tt>
+               class="code sev- "><tt><i>253</i>         <span class="n">p</span> <span class="o">=</span> <span class="s2">&quot;a*&quot;</span></tt>
             </div>
             <div id="l254"
-               class="code sev- "><tt><i>254</i>         <span class="n">p</span> <span class="o">=</span> <span class="s2">&quot;efgh&quot;</span></tt>
+               class="code sev- "><tt><i>254</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">regex_matching</span><span class="o">.</span><span class="n">is_match</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">p</span><span class="p">))</span></tt>
             </div>
             <div id="l255"
-               class="code sev- "><tt><i>255</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="n">regex_matching</span><span class="o">.</span><span class="n">is_match</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">p</span><span class="p">))</span></tt>
+               class="code sev- "><tt><i>255</i> &nbsp;</tt>
             </div>
             <div id="l256"
-               class="code sev- "><tt><i>256</i> &nbsp;</tt>
+               class="code sev- "><tt><i>256</i>     <span class="k">def</span> <span class="nf">test_symbol_1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
             </div>
             <div id="l257"
-               class="code sev- "><tt><i>257</i>     <span class="k">def</span> <span class="nf">test_no_symbol_not_equal_1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>257</i>         <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;a&quot;</span></tt>
             </div>
             <div id="l258"
-               class="code sev- "><tt><i>258</i>         <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;ab&quot;</span></tt>
+               class="code sev- "><tt><i>258</i>         <span class="n">p</span> <span class="o">=</span> <span class="s2">&quot;ab*&quot;</span></tt>
             </div>
             <div id="l259"
-               class="code sev- "><tt><i>259</i>         <span class="n">p</span> <span class="o">=</span> <span class="s2">&quot;abb&quot;</span></tt>
+               class="code sev- "><tt><i>259</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">regex_matching</span><span class="o">.</span><span class="n">is_match</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">p</span><span class="p">))</span></tt>
             </div>
             <div id="l260"
-               class="code sev- "><tt><i>260</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="n">regex_matching</span><span class="o">.</span><span class="n">is_match</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">p</span><span class="p">))</span></tt>
+               class="code sev- "><tt><i>260</i> &nbsp;</tt>
             </div>
             <div id="l261"
-               class="code sev- "><tt><i>261</i> &nbsp;</tt>
+               class="code sev- "><tt><i>261</i>     <span class="k">def</span> <span class="nf">test_symbol_2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
             </div>
             <div id="l262"
-               class="code sev- "><tt><i>262</i>     <span class="k">def</span> <span class="nf">test_symbol_0</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>262</i>         <span class="c1"># E.g.</span></tt>
             </div>
             <div id="l263"
-               class="code sev- "><tt><i>263</i>         <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span></tt>
+               class="code sev- "><tt><i>263</i>         <span class="c1">#   s a b b</span></tt>
             </div>
             <div id="l264"
-               class="code sev- "><tt><i>264</i>         <span class="n">p</span> <span class="o">=</span> <span class="s2">&quot;a*&quot;</span></tt>
+               class="code sev- "><tt><i>264</i>         <span class="c1"># p 1 0 0 0</span></tt>
             </div>
             <div id="l265"
-               class="code sev- "><tt><i>265</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">regex_matching</span><span class="o">.</span><span class="n">is_match</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">p</span><span class="p">))</span></tt>
+               class="code sev- "><tt><i>265</i>         <span class="c1"># a 0 1 0 0</span></tt>
             </div>
             <div id="l266"
-               class="code sev- "><tt><i>266</i> &nbsp;</tt>
+               class="code sev- "><tt><i>266</i>         <span class="c1"># b 0 0 1 0</span></tt>
             </div>
             <div id="l267"
-               class="code sev- "><tt><i>267</i>     <span class="k">def</span> <span class="nf">test_symbol_1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>267</i>         <span class="c1"># * 0 1 1 1</span></tt>
             </div>
             <div id="l268"
-               class="code sev- "><tt><i>268</i>         <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;a&quot;</span></tt>
+               class="code sev- "><tt><i>268</i>         <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;abb&quot;</span></tt>
             </div>
             <div id="l269"
                class="code sev- "><tt><i>269</i>         <span class="n">p</span> <span class="o">=</span> <span class="s2">&quot;ab*&quot;</span></tt>
@@ -902,46 +917,13 @@
                class="code sev- "><tt><i>271</i> &nbsp;</tt>
             </div>
             <div id="l272"
-               class="code sev- "><tt><i>272</i>     <span class="k">def</span> <span class="nf">test_symbol_2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></tt>
+               class="code sev- "><tt><i>272</i> &nbsp;</tt>
             </div>
             <div id="l273"
-               class="code sev- "><tt><i>273</i>         <span class="c1"># E.g.</span></tt>
+               class="code sev- "><tt><i>273</i> <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span></tt>
             </div>
             <div id="l274"
-               class="code sev- "><tt><i>274</i>         <span class="c1">#   s a b b</span></tt>
-            </div>
-            <div id="l275"
-               class="code sev- "><tt><i>275</i>         <span class="c1"># p 1 0 0 0</span></tt>
-            </div>
-            <div id="l276"
-               class="code sev- "><tt><i>276</i>         <span class="c1"># a 0 1 0 0</span></tt>
-            </div>
-            <div id="l277"
-               class="code sev- "><tt><i>277</i>         <span class="c1"># b 0 0 1 0</span></tt>
-            </div>
-            <div id="l278"
-               class="code sev- "><tt><i>278</i>         <span class="c1"># * 0 1 1 1</span></tt>
-            </div>
-            <div id="l279"
-               class="code sev- "><tt><i>279</i>         <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;abb&quot;</span></tt>
-            </div>
-            <div id="l280"
-               class="code sev- "><tt><i>280</i>         <span class="n">p</span> <span class="o">=</span> <span class="s2">&quot;ab*&quot;</span></tt>
-            </div>
-            <div id="l281"
-               class="code sev- "><tt><i>281</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">regex_matching</span><span class="o">.</span><span class="n">is_match</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">p</span><span class="p">))</span></tt>
-            </div>
-            <div id="l282"
-               class="code sev- "><tt><i>282</i> &nbsp;</tt>
-            </div>
-            <div id="l283"
-               class="code sev- "><tt><i>283</i> &nbsp;</tt>
-            </div>
-            <div id="l284"
-               class="code sev- "><tt><i>284</i> <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span></tt>
-            </div>
-            <div id="l285"
-               class="code sev- "><tt><i>285</i>     <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span></tt>
+               class="code sev- "><tt><i>274</i>     <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span></tt>
             </div>
             
          </div>
