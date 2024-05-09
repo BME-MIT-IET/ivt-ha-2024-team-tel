@@ -1,4 +1,4 @@
-name: Flake8
+name: Pipiline
 
 on: [push, pull_request]
 
@@ -20,6 +20,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8
         pip install flake8-html
+        pip install coverage
 
     - name: Run Flake8
       id: flake8
@@ -36,10 +37,25 @@ jobs:
         cp -r reports/flake8_report/* static_analysis_reports/
         echo "Flake8 report copied to static_analysis_reports folder"
 
+    - name: Run Coverage
+      id: coverage
+      run: |
+        mkdir -p coverage
+        coverage html -d coverage_html
+
+    - name: Create Coverage Reports Folder
+      run: mkdir -p coverage_report
+
+    - name: Copy Coverage report to repository
+      run: |
+        rm -rf coverage_report/*
+        cp -r coverage_html/* coverage_report/
+        echo "Coverage report copied to coverage_report folder"
+
     - name: Commit Reports to Repository
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@users.noreply.github.com"
-        git add static_analysis_reports
-        git commit -m "Add Flake8 report" || echo "No changes to commit"
+        git add .
+        git commit -m "Reports" || echo "No changes to commit"
         git push
