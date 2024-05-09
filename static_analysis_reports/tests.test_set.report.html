@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>flake8 violations: tests/test_set.py</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+<script>
+function bindHandler(link) {
+   var code = link.getAttribute('data-code');
+   var key = location.pathname + '#' + code;
+
+   var ul = link.parentNode.querySelector('.details');
+   if (sessionStorage[key] != 'open') {
+      ul.style.display = 'none';
+   }
+   link.addEventListener('click', function (event) {
+      if (!ul.style.display || ul.style.display == 'none') {
+         ul.style.display = 'block';
+         sessionStorage[key] = 'open';
+      } else {
+         ul.style.display = 'none';
+         sessionStorage[key] = 'closed';
+      }
+   });
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+   var links = document.querySelectorAll('#index > li > a');
+   for (var i = 0; i < links.length; i++) {
+      bindHandler(links[i]);
+   }
+});
+</script>
+   </head>
+   <body>
+      <div id="masthead" class="sev-2"></div>
+      <div id="page">
+         <p id="srclink">
+            <a title="View full annotated source"
+               href="tests.test_set.source.html">
+               <img src="file.svg" alt="&#x2261;">
+            </a></p>
+         <h1>
+            <a href="index.html">
+               <img src="back.svg" alt="&#x2B05;">
+               tests/test_set.py
+            </a>
+         </h1>
+
+         <ul id="index">
+         
+         <li>
+            <a data-code="E501">
+               <span class="count sev-2">
+                  13
+               </span>
+               <strong>E501:</strong> line too long (80 > 79 characters)
+               
+                  (and 7 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Line too long (80 > 79 characters):</p>
+               
+               <a href="tests.test_set.source.html#l12">
+                  <tt><i>12</i>                          <span class="n">find_keyboard_row</span><span class="p">([</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="s2">&quot;Alaska&quot;</span><span class="p">,</span> <span class="s2">&quot;Dad&quot;</span><span class="p">,</span> <span class="s2">&quot;Peace&quot;</span><span class="p">]))</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (81 > 79 characters):</p>
+               
+               <a href="tests.test_set.source.html#l17">
+                  <tt><i>17</i>                          <span class="n">find_keyboard_row</span><span class="p">([</span><span class="s2">&quot;Alaska&quot;</span><span class="p">,</span> <span class="s2">&quot;Dad&quot;</span><span class="p">,</span> <span class="s2">&quot;Qwerty&quot;</span><span class="p">,</span> <span class="s2">&quot;Peace&quot;</span><span class="p">]))</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (80 > 79 characters):</p>
+               
+               <a href="tests.test_set.source.html#l27">
+                  <tt><i>27</i>                          <span class="n">find_keyboard_row</span><span class="p">([</span><span class="s2">&quot;HeLLo&quot;</span><span class="p">,</span> <span class="s2">&quot;AlAsKa&quot;</span><span class="p">,</span> <span class="s2">&quot;DaD&quot;</span><span class="p">,</span> <span class="s2">&quot;PeAcE&quot;</span><span class="p">]))</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (82 > 79 characters):</p>
+               
+               <a href="tests.test_set.source.html#l36">
+                  <tt><i>36</i>                          <span class="n">find_keyboard_row</span><span class="p">([</span><span class="s2">&quot;QWERTY&quot;</span><span class="p">,</span> <span class="s2">&quot;ASDFG&quot;</span><span class="p">,</span> <span class="s2">&quot;ZXCVB&quot;</span><span class="p">,</span> <span class="s2">&quot;HELLO&quot;</span><span class="p">]))</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (82 > 79 characters):</p>
+               
+               <a href="tests.test_set.source.html#l41">
+                  <tt><i>41</i>                          <span class="n">find_keyboard_row</span><span class="p">([</span><span class="s2">&quot;qwerty&quot;</span><span class="p">,</span> <span class="s2">&quot;asdfg&quot;</span><span class="p">,</span> <span class="s2">&quot;zxcvb&quot;</span><span class="p">,</span> <span class="s2">&quot;hello&quot;</span><span class="p">]))</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (86 > 79 characters):</p>
+               
+               <a href="tests.test_set.source.html#l57">
+                  <tt><i>57</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">random_set</span><span class="o">.</span><span class="n">elements</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># Length should not change</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (85 > 79 characters):</p>
+               
+               <a href="tests.test_set.source.html#l71">
+                  <tt><i>71</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertIsNone</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">random_set</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>  <span class="c1"># Removing non-existent element</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (120 > 79 characters):</p>
+               
+               <a href="tests.test_set.source.html#l94">
+                  <tt><i>94</i>         <span class="n">remaining_elements</span> <span class="o">=</span> <span class="p">{</span><span class="bp">self</span><span class="o">.</span><span class="n">random_set</span><span class="o">.</span><span class="n">elements</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">random_set</span><span class="o">.</span><span class="n">index_map</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">random_set</span><span class="o">.</span><span class="n">index_map</span><span class="p">}</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (95 > 79 characters):</p>
+               
+               <a href="tests.test_set.source.html#l112">
+                  <tt><i>112</i>         <span class="n">optimal_cover</span> <span class="o">=</span> <span class="n">set_covering</span><span class="o">.</span><span class="n">optimal_set_cover</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">universe</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">subsets</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">costs</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (93 > 79 characters):</p>
+               
+               <a href="tests.test_set.source.html#l119">
+                  <tt><i>119</i>         <span class="n">greedy_cover</span> <span class="o">=</span> <span class="n">set_covering</span><span class="o">.</span><span class="n">greedy_set_cover</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">universe</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">subsets</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">costs</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (80 > 79 characters):</p>
+               
+               <a href="tests.test_set.source.html#l140">
+                  <tt><i>140</i>         <span class="n">optimal_cover</span> <span class="o">=</span> <span class="n">set_covering</span><span class="o">.</span><span class="n">optimal_set_cover</span><span class="p">(</span><span class="n">universe</span><span class="p">,</span> <span class="n">subsets</span><span class="p">,</span> <span class="n">costs</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (80 > 79 characters):</p>
+               
+               <a href="tests.test_set.source.html#l165">
+                  <tt><i>165</i>         <span class="n">optimal_cover</span> <span class="o">=</span> <span class="n">set_covering</span><span class="o">.</span><span class="n">optimal_set_cover</span><span class="p">(</span><span class="n">universe</span><span class="p">,</span> <span class="n">subsets</span><span class="p">,</span> <span class="n">costs</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (80 > 79 characters):</p>
+               
+               <a href="tests.test_set.source.html#l186">
+                  <tt><i>186</i>         <span class="n">optimal_cover</span> <span class="o">=</span> <span class="n">set_covering</span><span class="o">.</span><span class="n">optimal_set_cover</span><span class="p">(</span><span class="n">universe</span><span class="p">,</span> <span class="n">subsets</span><span class="p">,</span> <span class="n">costs</span><span class="p">)</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="W293">
+               <span class="count sev-2">
+                  7
+               </span>
+               <strong>W293:</strong> blank line contains whitespace
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="tests.test_set.source.html#l13">
+                  <tt><i>13</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="tests.test_set.source.html#l23">
+                  <tt><i>23</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="tests.test_set.source.html#l28">
+                  <tt><i>28</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="tests.test_set.source.html#l32">
+                  <tt><i>32</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="tests.test_set.source.html#l37">
+                  <tt><i>37</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="tests.test_set.source.html#l42">
+                  <tt><i>42</i>         </tt>
+               </a>
+            </li><li>
+               
+               <a href="tests.test_set.source.html#l191">
+                  <tt><i>191</i>         </tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E231">
+               <span class="count sev-2">
+                  2
+               </span>
+               <strong>E231:</strong> missing whitespace after ','
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="tests.test_set.source.html#l2">
+                  <tt><i>2</i>     <span class="n">find_keyboard_row</span><span class="p">,</span><span class="n">RandomizedSet</span><span class="p">,</span><span class="n">set_covering</span> </tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E302">
+               <span class="count sev-2">
+                  2
+               </span>
+               <strong>E302:</strong> expected 2 blank lines, found 1
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="tests.test_set.source.html#l43">
+                  <tt><i>43</i> <span class="k">class</span> <span class="nc">TestRandomizedSet</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="tests.test_set.source.html#l97">
+                  <tt><i>97</i> <span class="k">class</span> <span class="nc">TestSetCovering</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E305">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E305:</strong> expected 2 blank lines after class or function definition, found 1
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="tests.test_set.source.html#l192">
+                  <tt><i>192</i> <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="W291">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>W291:</strong> trailing whitespace
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="tests.test_set.source.html#l2">
+                  <tt><i>2</i>     <span class="n">find_keyboard_row</span><span class="p">,</span><span class="n">RandomizedSet</span><span class="p">,</span><span class="n">set_covering</span> </tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="W292">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>W292:</strong> no newline at end of file
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="tests.test_set.source.html#l193">
+                  <tt><i>193</i>     <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         </ul>
+      </div>
+   </body>
+</html>
