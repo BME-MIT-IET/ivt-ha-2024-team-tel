@@ -28,9 +28,9 @@ To minimize the number of issues flagged by static analysis tools, follow these 
 Static analysis is integrated into our CI/CD pipeline to ensure that analysis reports are generated automatically (inside `static_analysis_reports` directory) during the build process. This helps in identifying and addressing issues early in the development cycle.
 
 ## Sample Reports
-![](docs/Screenshots/report1.png)
-![](docs/Screenshots/report2.png)
-![](docs/Screenshots/report3.png)
+![](Screenshots/report1.png)
+![](Screenshots/report2.png)
+![](Screenshots/report3.png)
 
 ## Conclusion
 Static analysis is a critical aspect of our development process, helping us maintain code quality, identify potential issues, and deliver reliable software to our users.
