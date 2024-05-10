@@ -27,3 +27,8 @@ script:
 notifications:
     on_success: change
     on_failure: change  # `always` will be the setting once code changes slow down
+after_success:
+  - docker build -t my-python-app .
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker tag my-python-app $DOCKER_USERNAME/my-python-app
+  - docker push $DOCKER_USERNAME/my-python-app
