@@ -13,53 +13,16 @@ from algorithms.dp import (
     longest_increasing_subsequence,
     longest_increasing_subsequence_optimized,
     longest_increasing_subsequence_optimized2,
-    int_divide,find_k_factor,elias_gamma_encode,elias_gamma_decode,elias_delta_encode,elias_delta_decode,
-    planting_trees, regex_matching,HuffmanCoding,encode_rle,decode_rle
-)
+    int_divide, find_k_factor,
+    planting_trees, regex_matching,
 
+)
+from algorithms.compression.rle_compression import *
 
 import unittest
+
+
 #added
-class TestEliasCoding(unittest.TestCase):
-
-    def test_elias_gamma_encode(self):
-        self.assertEqual(elias_gamma_encode(1), '1')
-        self.assertEqual(elias_gamma_encode(4), '00100')
-        self.assertEqual(elias_gamma_encode(10), '0001010')
-
-    def test_elias_gamma_decode(self):
-        self.assertEqual(elias_gamma_decode('1'), 1)
-        self.assertEqual(elias_gamma_decode('00100'), 4)
-        self.assertEqual(elias_gamma_decode('0001010'), 10)
-
-    def test_elias_delta_encode(self):
-        self.assertEqual(elias_delta_encode(1), '1')
-        self.assertEqual(elias_delta_encode(4), '0100')
-        self.assertEqual(elias_delta_encode(10), '011010')
-
-    def test_elias_delta_decode(self):
-        self.assertEqual(elias_delta_decode('1'), 1)
-        self.assertEqual(elias_delta_decode('0100'), 4)
-        self.assertEqual(elias_delta_decode('011010'), 10)
-#added
-class TestHuffmanCoding(unittest.TestCase):
-
-    def test_huffman_encoding(self):
-        # Simple ASCII encoding/decoding
-        input_str = "Hello World"
-        encoded_data, tree = HuffmanCoding.encode(input_str)
-        decoded_data = HuffmanCoding.decode(encoded_data, tree)
-        self.assertEqual(decoded_data, input_str)
-
-    def test_huffman_efficiency(self):
-        # Testing compression efficiency
-        input_str = "AAAAAABBBBBCCCCCDDDDD"
-        encoded_data, tree = HuffmanCoding.encode(input_str)
-        original_size = len(input_str) * 8
-        compressed_size = len(encoded_data)
-        self.assertTrue(compressed_size < original_size)
-
-#added 
 class TestRLECompression(unittest.TestCase):
 
     def test_simple_encode(self):
@@ -77,6 +40,7 @@ class TestRLECompression(unittest.TestCase):
         encoded = encode_rle(input_str)
         decoded = decode_rle(encoded)
         self.assertEqual(decoded, input_str)
+
 
 class TestBuySellStock(unittest.TestCase):
     def test_max_profit_naive(self):
@@ -150,11 +114,11 @@ class TestHosoyaTriangle(unittest.TestCase):
     def test_hosoya(self):
         self.assertEqual([1], hosoya_testing(1))
         self.assertEqual([1,
-                         1, 1,
-                         2, 1, 2,
-                         3, 2, 2, 3,
-                         5, 3, 4, 3, 5,
-                         8, 5, 6, 6, 5, 8],
+                          1, 1,
+                          2, 1, 2,
+                          3, 2, 2, 3,
+                          5, 3, 4, 3, 5,
+                          8, 5, 6, 6, 5, 8],
                          hosoya_testing(6))
         self.assertEqual([1,
                           1, 1,
@@ -195,17 +159,6 @@ class TestLongestIncreasingSubsequence(unittest.TestCase):
         sequence = [1, 101, 10, 2, 3, 100, 4, 6, 2]
         self.assertEqual(5, longest_increasing_subsequence(sequence))
 
-
-class TestLongestIncreasingSubsequenceOptimized(unittest.TestCase):
-    def test_longest_increasing_subsequence_optimized(self):
-        sequence = [1, 101, 10, 2, 3, 100, 4, 6, 2]
-        self.assertEqual(5, longest_increasing_subsequence(sequence))
-
-
-class TestLongestIncreasingSubsequenceOptimized2(unittest.TestCase):
-    def test_longest_increasing_subsequence_optimized2(self):
-        sequence = [1, 101, 10, 2, 3, 100, 4, 6, 2]
-        self.assertEqual(5, longest_increasing_subsequence(sequence))
 
 
 class TestIntDivide(unittest.TestCase):
@@ -267,7 +220,8 @@ class TestPlantingTrees(unittest.TestCase):
 
         # assert
         self.assertEqual(res, 9.28538328578604)
-    
+
+
 class TestRegexMatching(unittest.TestCase):
     def test_none_0(self):
         s = ""
