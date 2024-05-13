@@ -27,5 +27,5 @@ It generate the results in a html page
 
 
 
-![Image](![alt text](image.png))
+![Image](![alt text](Screenshots/image.png))
 
